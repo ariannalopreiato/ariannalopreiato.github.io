@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+</head>
+<body>
+    <main>
+        <section class="image-container">
+            <img src="{{ '/assets/headerimage.png' | relative_url }}" style="width: 100%; margin: 0;">
+            <h2>Arianna Lopreiato</h2>
+            <p>Game Designer and Developer</p>
+		</section>
+			
+		<style>
+				.image-container {
+					position: relative; /* Necessario per il posizionamento degli elementi figli */
+					text-align: center; /* Centro il contenuto all'interno della sezione */
+					margin-bottom: 20px;
+				}
+
+				h2, p {
+					position: absolute; /* Posizionamento assoluto per sovrapporre il testo all'immagine */
+					left: 50%; /* Posizione orizzontale al centro */
+					transform: translateX(-50%); /* Sposta il testo per centrarlo */
+					color: white; /* Colore del testo */
+					margin: 0; /* Rimuove margini */
+				}
+
+				h2 {
+					top: 40%; /* Posizione verticale del titolo */
+					font-size: 2.5em; /* Dimensione del titolo */
+				}
+				
+				p {
+					top: 50%; /* Posizione verticale della descrizione */
+					font-size: 1.2em; /* Dimensione della descrizione */
+				}
+		</style>
+        
+		<h4>Questo è il tuo paragrafo di descrizione. Puoi aggiungere dettagli sulla tua banda, la tua musica, o qualsiasi altra informazione che desideri condividere!</h4>
+
+
+<section class="gallery">
+    <div class="item">
+        <img src="{{ '/assets/MoonlightPeaks/moonlightpeaks_cover.jpg' }}">
+        <h3>Titolo 2</h3>
+        <p>Descrizione 2.</p>
+    </div>
+	<div class="item">
+        <img src="{{ '/assets/FireEscape/fireescape_cover.png' }}">
+        <h3>Titolo 2</h3>
+        <p>Descrizione 2.</p>
+    </div>
+    <div class="item">
+        <img src="{{ '/assets/PlantASaurus/plantasaurus_cover.png' }}">
+        <h3>Titolo 3</h3>
+        <p>Descrizione 3.</p>
+    </div>
+    <div class="item">
+        <img src="{{ '/assets/WitchsLight/witchslight_cover.png' }}">
+        <h3>Titolo 4</h3>
+        <p>Descrizione 4.</p>
+    </div>
+	<div class="item">
+        <img src="{{ '/assets/AnimaALostSoul/animaalostsoul_cover.png' }}">
+        <h3>Titolo 4</h3>
+        <p>Descrizione 4.</p>
+    </div>
+	<div class="item">
+        <img src="{{ '/assets/OpenYourEyes/openyoureyes_cover.png' }}">
+        <h3>Titolo 4</h3>
+        <p>Descrizione 4.</p>
+    </div>
+	<div class="item">
+        <img src="{{ '/assets/FlowerPower/flowerpower_cover.png' }}">
+        <h3>Titolo 4</h3>
+        <p>Descrizione 4.</p>
+    </div>
+	<div class="item">
+        <img src="{{ '/assets/ShellWeGo/shellwego_cover.png' }}">
+        <h3>Titolo 4</h3>
+        <p>Descrizione 4.</p>
+    </div>
+</section>
+
+<style>
+    .gallery {
+        display: flex; /* Utilizza Flexbox per il layout */
+        justify-content: left; /* Centra la galleria */
+        margin: 50px 160px; /* Spazio sopra e sotto la galleria e 40px ai lati */
+        flex-wrap: wrap; /* Permette di avvolgere le immagini in più righe */
+    }
+
+    .item {
+        margin: 10px; /* Margine di 10px attorno a ciascun elemento per separare le immagini */
+        text-align: center; /* Centro il testo per titolo e descrizione */
+        width: calc(33.33% - 20px); /* Tre colonne con margine: 100% diviso 3 meno il margine */
+        max-width: 500px; /* Larghezza massima per ciascun item */
+    }
+
+    .item img {
+        width: 100%; /* Le immagini riempiono completamente l'elemento */
+        height: auto; /* Mantiene le proporzioni dell'immagine */
+        border-radius: 80px; /* Angoli arrotondati (opzionale) */
+		height: 300px;
+    }
+
+    h3 {
+        margin: 10px 0 5px; /* Margini sopra e sotto il titolo */
+        font-size: 1.5em; /* Dimensione del font per il titolo */
+    }
+
+    p {
+        font-size: 1em; /* Dimensione del font per la descrizione */
+        color: #555; /* Colore del testo della descrizione */
+    }
+
+    /* Media query per rendere la galleria responsiva */
+    @media (max-width: 768px) {
+        .item {
+            width: calc(50% - 20px); /* Due colonne su schermi più piccoli */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .item {
+            width: 100%; /* Una colonna su schermi molto piccoli */
+        }
+    }
+</style>
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} Il Mio Sito Personale</p>
+    </footer>
+</body>
+</html>
