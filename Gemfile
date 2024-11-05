@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.9.2" 
-gem "jekyll-theme-architect"
+gem "jekyll", "3.9.2" 
+gem "jekyll-theme-clean-blog"
 #gem "github-pages", "~> 227", group: :jekyll_plugins
 gem 'csv'
 gem 'base64'
