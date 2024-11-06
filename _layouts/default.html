@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'it' }}">
+<html lang="{{ page.lang | default: 'en' }}">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="{{ '/assets/styles.css' }}">
 	</head>
 	<body>
 		<main>
 			<section class="image-container">
-				<img src="{{ '/assets/headerimage.png' | relative_url }}" style="width: 100%; margin: 0;">
-				<h2>Arianna Lopreiato</h2>
-				<p>Game Designer and Developer</p>
+				<img src="{{ '/assets/headerimage.png' }}" style="width: 100%; margin: 0;">
+				<h2>{{ page.header_title }}</h2>
+				<p>{{ page.header_subtitle }}</p>
 			</section>
 				
 			<style>
@@ -47,8 +46,8 @@
 				<img src="{{ '/assets/en_flag.jpg' }}" alt="English">
 			{% endif %}
 				<div class="language-dropdown" id="languageDropdown">
-					<a href="/it{{ page.url }}"><img src="{{ '/assets/it_flag.png' }}" alt="Italiano"> Italiano</a>
-					<a href="/en{{ page.url }}"><img src="{{ '/assets/en_flag.jpg' }}" alt="English"> English</a>
+					<a href="/it/index.html"><img src="{{ '/assets/it_flag.png' }}" alt="Italiano"> Italiano</a>
+					<a href="/en/index.html"><img src="{{ '/assets/en_flag.jpg' }}" alt="English"> English</a>
 				</div>
 			</div>
 			<style>
@@ -90,8 +89,7 @@
 				}
 			</style>
 			
-			<h4>Questo è il tuo paragrafo di descrizione. Puoi aggiungere dettagli sulla tua banda, la tua musica, o qualsiasi altra informazione che desideri condividere!</h4>
-
+			<h4>{{ page.description }}</h4>
 
 		<section class="gallery">
 			<div class="item">
@@ -139,7 +137,7 @@
 				<p>Descrizione 4.</p>
 			</div>
 		</section>
-
+<h3>Current language: {{ page.lang }}</h3>
 		<style>
 			.gallery {
 				display: flex; /* Utilizza Flexbox per il layout */
