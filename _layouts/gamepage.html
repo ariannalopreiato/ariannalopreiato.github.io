@@ -1,23 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+    <style>
+        /* Aggiungiamo lo stile per l'immagine di sfondo */
+        .project-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Mette lo sfondo dietro al contenuto */
+            background-image: url("{{ page.background_image | relative_url }}");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5; /* Impostiamo la trasparenza per non nascondere completamente il contenuto */
+        }
+        .project-content {
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Uno sfondo semi-trasparente */
+            border-radius: 8px;
+        }
+        .cover-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .project-description {
+            margin-top: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery-images img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="project-background"></div>
+
+    <div class="project-content">
         <h1>{{ page.title }}</h1>
-    </header>
+        
+        <!-- Immagine di copertura del progetto -->
+        <img src="{{ page.cover_image | relative_url }}" class="cover-image" alt="Cover Image">
 
-    <section class="project-overview">
-        <img src="{{ page.image }}" alt="{{ page.title }}">
-        <p>{{ page.description }}</p>
-    </section>
+        <!-- Descrizione del progetto -->
+        <div class="project-description">
+            <p>{{ page.description }}</p>
+        </div>
 
+        <!-- Galleria di immagini o video -->
+        <div class="gallery-images">
+            {% for media in page.gallery %}
+                <div class="media-item">
+                    {% if media.ext == "mp4" %}
+                        <video controls>
+                            <source src="{{ media | relative_url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    {% else %}
+                        <img src="{{ media | relative_url }}" alt="Gallery Image">
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
 
-    <footer>
-        <p>© 2023 My Portfolio</p>
-    </footer>
+        <!-- Bottone di download -->
+        <a href="{{ page.download_link | relative_url }}" class="download-btn" download>Download EXE</a>
+    </div>
+
 </body>
 </html>
