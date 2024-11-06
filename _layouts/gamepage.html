@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
     <style>
         /* Aggiungiamo lo stile per l'immagine di sfondo */
         .project-background {
@@ -63,7 +62,7 @@
         <h1>{{ page.title }}</h1>
         
         <!-- Immagine di copertura del progetto -->
-        <img src="{{ page.cover_image | relative_url }}" class="cover-image" alt="Cover Image">
+        <img src="{{ page.cover_image }}" class="cover-image" alt="Cover Image">
 
         <!-- Descrizione del progetto -->
         <div class="project-description">
@@ -76,7 +75,7 @@
                 <div class="media-item">
                     {% if media.ext == "mp4" %}
                         <video controls>
-                            <source src="{{ media | relative_url }}" type="video/mp4">
+                            <source src="{{ media }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     {% else %}
@@ -87,8 +86,72 @@
         </div>
 
         <!-- Bottone di download -->
-        <a href="{{ page.download_link | relative_url }}" class="download-btn" download>Download EXE</a>
-    </div>
+        <a href="{{ page.download_link }}" class="download-btn" download>Download EXE</a>
+		<a href="{{ '/' | append: page.lang | append: '/index.html' | relative_url }}">Back Home</a>
+	</div>
+	
+	<div class="language-selector" onclick="toggleDropdown()">
+		{% if page.lang == 'it' %}
+			<img src="{{ '/assets/it_flag.png' }}" alt="Italiano">
+		{% else %}
+			<img src="{{ '/assets/en_flag.jpg' }}" alt="English">
+		{% endif %}
+			<div class="language-dropdown" id="languageDropdown">
+				<a href="{{ page.lang_links.it }}"><img src="{{ '/assets/it_flag.png' }}" alt="Italiano"> Italiano</a>
+				<a href="{{ page.lang_links.en }}"><img src="{{ '/assets/en_flag.jpg' }}" alt="English"> English</a>
+			</div>
+	</div>
+	<style>
+		/* Stile per il pulsante di lingua e il menu a tendina */
+			.language-selector {
+				position: absolute;
+				top: 20px;
+				right: 50px;
+				cursor: pointer;
+				display: inline-block;
+			}
+			
+				.language-selector img {
+				width: 30px;
+				height: auto;
+				border-radius: 50%; /* Bandiera rotonda */
+			}
 
+			.language-dropdown {
+				display: none; /* Nascondi il menu di default */
+				position: absolute;
+				top: 40px;
+				right: 0;
+				background-color: white;
+				box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+				z-index: 1;
+				border-radius: 5px;
+			}
+			
+			.language-dropdown a {
+				color: black;
+				padding: 10px 15px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.language-dropdown a:hover {
+				background-color: #f1f1f1;
+		}
+	</style>
+	
+	<script>
+			function toggleDropdown() {
+				const dropdown = document.getElementById('languageDropdown');
+				dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+			}
+
+			// Chiude il menu a tendina quando si clicca fuori di esso
+			window.onclick = function(event) {
+				if (!event.target.matches('.language-selector, .language-selector *')) {
+					document.getElementById('languageDropdown').style.display = 'none';
+				}
+			}
+		</script>
 </body>
 </html>
