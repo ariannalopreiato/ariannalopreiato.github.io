@@ -198,7 +198,27 @@
 
 			@media (max-width: 480px) {
 				.item {
-					width: 100%; /* Una colonna su schermi molto piccoli */
+					width: 100%;
+					margin: 10px 0;
+				}
+
+				.gallery {
+					margin: 20px 10px;
+					padding: 10px;
+				}
+
+				h3 {
+					font-size: 1.2em; /* Riduci un po' il font per il titolo */
+				}
+
+				p {
+					font-size: 0.9em; /* Riduci il font per una lettura più comoda */
+				}
+
+				.item img {
+					width: 100%; /* Mantiene la larghezza dell’immagine dentro al contenitore */
+					height: auto; /* Permette all’immagine di mantenere le proporzioni */
+					max-height: 300px; /* Limita l'altezza massima per non sovraccaricare la pagina */
 				}
 			}
 		</style>
