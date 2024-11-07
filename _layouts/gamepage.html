@@ -18,6 +18,14 @@
             background-position: center;
             opacity: 0.5; /* Impostiamo la trasparenza per non nascondere completamente il contenuto */
         }
+		
+		.page-title {
+            font-family: 'MyCustomFont', sans-serif;
+            font-size: 2em; /* Personalizza la dimensione come preferisci */
+            text-align: center;
+            margin-top: 20px;
+        }
+		
         .project-content {
             margin: 50px auto;
             max-width: 1200px;
@@ -25,14 +33,17 @@
             background-color: rgba(255, 255, 255, 0.8); /* Uno sfondo semi-trasparente */
             border-radius: 8px;
         }
+		
         .cover-image {
             width: 100%;
             max-height: 400px;
             object-fit: cover;
         }
+		
         .project-description {
             margin-top: 20px;
         }
+		
         .download-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -42,17 +53,31 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+		
         .gallery-images {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 20px;
         }
+		
         .gallery-images img {
             width: 100%;
             max-width: 400px;
             height: auto;
         }
+		
+	@font-face {
+		font-family: 'MyCustomFont';
+		src: url("{{ page.font | relative_url }}") format("opentype");
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	body {
+		font-family: 'MyCustomFont', sans-serif;
+	}
+
     </style>
 </head>
 <body>

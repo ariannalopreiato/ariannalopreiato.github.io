@@ -13,4 +13,6 @@ gallery:
 lang_links:
   it: "/it/projects/flowerpower.html"
   en: "/en/projects/flowerpower.html"
+
+font: "/assets/FlowerPower/SundayBest.ttf"
 ---

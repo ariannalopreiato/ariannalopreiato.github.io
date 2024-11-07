@@ -13,4 +13,6 @@ gallery:
 lang_links:
   it: "/it/projects/shellwego.html"
   en: "/en/projects/shellwego.html"
+
+font: "/assets/ShellWeGo/GochiHand-Regular.ttf"
 ---

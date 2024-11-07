@@ -13,4 +13,6 @@ gallery:
 lang_links:
   it: "/it/projects/animaalostsoul.html"
   en: "/en/projects/animaalostsoul.html"
+
+font: "/assets/AnimaALostSoul/Travelisty.otf"
 ---

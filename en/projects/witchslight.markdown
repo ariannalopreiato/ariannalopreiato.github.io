@@ -13,4 +13,6 @@ gallery:
 lang_links:
   it: "/it/projects/witchslight.html"
   en: "/en/projects/witchslight.html"
+
+font: "/assets/WitchsLight/BlackFlag.ttf"
 ---

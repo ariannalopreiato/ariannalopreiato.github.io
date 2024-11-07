@@ -13,4 +13,6 @@ gallery:
 lang_links:
   it: "/it/projects/plantasaurus.html"
   en: "/en/projects/plantasaurus.html"
+
+font: font: "/assets/PlantASaurus/QuietlyEndureRegular.otf"
 ---

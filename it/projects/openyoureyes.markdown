@@ -13,4 +13,6 @@ gallery:
 lang_links:
   it: "/it/projects/openyoureyes.html"
   en: "/en/projects/openyoureyes.html"
+
+font: "/assets/OpenYourEyes/SuperDream.ttf"
 ---
