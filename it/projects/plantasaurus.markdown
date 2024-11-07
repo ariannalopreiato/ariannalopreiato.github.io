@@ -3,8 +3,8 @@ layout: gamepage
 lang: "it"
 title: "Plant-A-Saurus"
 description: "Short project description."
-cover_image: "/assets/PlantASaurus/plantasaurus_cover.png"
-background_image: "/assets/PlantASaurus/plantasaurus_background.jpg"
+cover_image: "/assets/PlantASaurus/plantasaurus_banner.png"
+background_image: "/assets/PlantASaurus/plantasaurus_background.png"
 background_color: "#615aed"
 
 gallery:
@@ -14,5 +14,5 @@ lang_links:
   it: "/it/projects/plantasaurus.html"
   en: "/en/projects/plantasaurus.html"
 
-font: font: "/assets/PlantASaurus/QuietlyEndureRegular.otf"
+font: "/assets/PlantASaurus/QuietlyEndureRegular.otf"
 ---

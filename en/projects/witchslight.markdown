@@ -3,8 +3,8 @@ layout: gamepage
 lang: "en"
 title: "Witch's Light"
 description: "Short project description."
-cover_image: "/assets/WitchsLight/witchslight_cover.png"
-background_image: "/assets/WitchsLight/witchslight_background.jpg"
+cover_image: "/assets/WitchsLight/witchslight_banner.png"
+background_image: "/assets/WitchsLight/witchslight_background.png"
 background_color: "#615aed"
 
 gallery:
@@ -14,5 +14,5 @@ lang_links:
   it: "/it/projects/witchslight.html"
   en: "/en/projects/witchslight.html"
 
-font: "/assets/WitchsLight/BlackFlag.ttf"
+font: "/assets/WitchsLight/Rakkas-Regular.ttf"
 ---

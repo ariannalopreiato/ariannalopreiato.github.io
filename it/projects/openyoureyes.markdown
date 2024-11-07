@@ -3,8 +3,8 @@ layout: gamepage
 lang: "it"
 title: "Open Your Eyes"
 description: "Short project description."
-cover_image: "/assets/OpenYourEyes/openyoureyes_cover.png"
-background_image: "/assets/OpenYourEyes/openyoureyes_background.jpg"
+cover_image: "/assets/OpenYourEyes/openyoureyes_banner.png"
+background_image: "/assets/OpenYourEyes/openyoureyes_background.png"
 background_color: "#615aed"
 
 gallery:

@@ -14,10 +14,16 @@
             height: 100%;
             z-index: -1; /* Mette lo sfondo dietro al contenuto */
             background-image: url("{{ page.background_image | relative_url }}");
-            background-size: cover;
+            background-repeat: repeat;
             background-position: center;
-            opacity: 0.5; /* Impostiamo la trasparenza per non nascondere completamente il contenuto */
         }
+		
+		body, html {
+			min-height: 100%;
+			height: auto;
+			margin: 0;
+			padding: 0;
+		}
 		
 		.page-title {
             font-family: 'MyCustomFont', sans-serif;
@@ -26,18 +32,17 @@
             margin-top: 20px;
         }
 		
-        .project-content {
-            margin: 50px auto;
-            max-width: 1200px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Uno sfondo semi-trasparente */
-            border-radius: 8px;
-        }
-		
         .cover-image {
             width: 100%;
-            max-height: 400px;
+            max-height: 100%;
             object-fit: cover;
+			position: center;
+        }
+		
+		.project-content {
+            margin-left: 300px;
+            max-width: 880px;
+            padding: 20px;
         }
 		
         .project-description {
@@ -83,12 +88,12 @@
 <body>
     <div class="project-background"></div>
 
-    <div class="project-content">
-        <h1>{{ page.title }}</h1>
-        
+    <div class="project-content">       
         <!-- Immagine di copertura del progetto -->
         <img src="{{ page.cover_image }}" class="cover-image" alt="Cover Image">
 
+		<h1>{{ page.title }}</h1>
+		
         <!-- Descrizione del progetto -->
         <div class="project-description">
             <p>{{ page.description }}</p>

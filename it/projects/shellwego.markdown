@@ -3,8 +3,8 @@ layout: gamepage
 lang: "it"
 title: "Shell We Go?"
 description: "Short project description."
-cover_image: "/assets/ShellWeGo/shellwego_cover.png"
-background_image: "/assets/ShellWeGo/shellwego_background.jpg"
+cover_image: "/assets/ShellWeGo/shellwego_banner.jpg"
+background_image: "/assets/ShellWeGo/shellwego_background.png"
 background_color: "#615aed"
 
 gallery:

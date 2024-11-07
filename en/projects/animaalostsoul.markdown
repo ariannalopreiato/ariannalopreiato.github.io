@@ -3,8 +3,8 @@ layout: gamepage
 lang: "en"
 title: "Anima A Lost Soul"
 description: "Short project description."
-cover_image: "/assets/AnimaALostSoul/animaalostsoul_cover.png"
-background_image: "/assets/AnimaALostSoul/animaalostsoul_background.jpg"
+cover_image: "/assets/AnimaALostSoul/animaalostsoul_banner.png"
+background_image: "/assets/AnimaALostSoul/animaalostsoul_background.png"
 background_color: "#615aed"
 
 gallery:

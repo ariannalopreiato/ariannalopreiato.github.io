@@ -3,7 +3,7 @@ layout: gamepage
 lang: "it"
 title: "Moonlight Peaks"
 description: "Breve descrizione del progetto 1."
-cover_image: "/assets/MoonlightPeaks/moonlightpeaks_cover.jpg"
+cover_image: "/assets/MoonlightPeaks/moonlightpeaks_banner.jpg"
 background_image: "/assets/MoonlightPeaks/moonlightpeaks_background.jpg"
 background_color: "#615aed"
 

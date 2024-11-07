@@ -3,8 +3,8 @@ layout: gamepage
 lang: "en"
 title: "Plant-A-Saurus"
 description: "Short project description."
-cover_image: "/assets/PlantASaurus/plantasaurus_cover.png"
-background_image: "/assets/PlantASaurus/plantasaurus_background.jpg"
+cover_image: "/assets/PlantASaurus/plantasaurus_banner.png"
+background_image: "/assets/PlantASaurus/plantasaurus_background.png"
 background_color: "#615aed"
 
 gallery:

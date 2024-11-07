@@ -3,7 +3,7 @@ layout: gamepage
 lang: "it"
 title: "Fire Escape"
 description: "Short project description."
-cover_image: "/assets/FireEscape/fireescape_cover.png"
+cover_image: "/assets/FireEscape/fireescape_banner.png"
 background_image: "/assets/FireEscape/fireescape_background.jpg"
 background_color: "#615aed"
 
