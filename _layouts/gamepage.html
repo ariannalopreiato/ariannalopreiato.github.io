@@ -42,11 +42,7 @@
 		.project-content {
             margin-left: 300px;
             max-width: 880px;
-            padding: 20px;
-        }
-		
-        .project-description {
-            margin-top: 20px;
+            padding: 10px;
         }
 		
         .download-btn {
@@ -94,9 +90,24 @@
 
 		<h1>{{ page.title }}</h1>
 		
-        <!-- Descrizione del progetto -->
-        <div class="project-description">
-            <p>{{ page.description }}</p>
+		<h2> {{page.game}}</h2>	
+        <div>
+            <p>{{ page.game-description }}</p>
+        </div>
+		
+		<h2> {{page.development}}</h2>	
+        <div>
+            <p>{{ page.development-description }}</p>
+        </div>
+		
+		<h2> {{page.controls}}</h2>	
+        <div>
+            <p>{{ page.controls-description }}</p>
+        </div>
+		
+		<h2> {{page.credits}}</h2>	
+        <div>
+            <p>{{ page.credits-description }}</p>
         </div>
 
         <!-- Galleria di immagini o video -->
