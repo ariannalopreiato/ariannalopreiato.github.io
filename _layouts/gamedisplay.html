@@ -3,7 +3,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <style>    
+    <style>   
+		@font-face {
+			font-family: 'MainTitleFont';
+			src: url("/assets/fonts/Mabook.ttf") format("opentype");
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'TitleFont';
+			src: url("/assets/fonts/feltful_regular.otf") format("opentype");
+			font-weight: normal;
+			font-style: normal;
+		}
+		
       body {
         background-image: url('/assets/background.png');
         background-size: contain;
@@ -22,7 +36,6 @@
         display: flex;
         width: 80%;
         height: 95vh;
-        border: 2px solid #333;
         overflow: hidden;
         background-color: transparent;
       }
@@ -46,6 +59,7 @@
 		  left: 50px;
 		  font-size: 3em;
 		  font-weight: bold;
+		  font-family: 'MainTitleFont', sans-serif;
 		  transform: rotate(-8deg);
 		  color: #333;
 		}
@@ -53,9 +67,10 @@
 		.title-right {
 		  position: absolute;
 		  top: 10px;
-		  right: 20px;
+		  right: 50px;
 		  font-size: 3em;
 		  font-weight: bold;
+		  font-family: 'MainTitleFont', sans-serif;
 		  transform: rotate(4deg);
 		  color: #333;
 		}
@@ -72,6 +87,7 @@
 		  align-items: center;
 		  text-align: center;
 		  background-color: transparent;
+		  font-family: 'TitleFont', sans-serif;
 		}
 		
 		.item img {
@@ -81,65 +97,87 @@
 		  object-fit: cover;
 		}
 
-		.item .img1 {
+		.item1 {
 		  position: absolute;
-		  top: 30px; /* Randomize position */
-		  left: 270px; /* Randomize position */
+		  top: 40px; /* Randomize position */
+		  left: 290px; /* Randomize position */
 		  object-fit: cover;
 		  z-index: 0;
-		  transform: rotate(-6deg); /* Random rotation */
+		  transform: rotate(6deg); /* Random rotation */
 		}
 		
-		.item .img2 {
+		.item2 {
 		  position: absolute;
-		  top: 170px; /* Randomize the top position */
-		  left: -250px; /* Randomize the left position */
+		  top: 180px; /* Randomize the top position */
+		  left: 30px; /* Randomize the left position */
 		  object-fit: cover;
 		  z-index: 0;
 		  transform: rotate(2deg); /* Slight rotation to create randomness */
 		}
 
-		.item .img3 {
+		.item3 {
 		  position: absolute;
-		  top: 0px; /* Randomize position */
-		  left: 270px; /* Randomize position */
+		  top: 330px; /* Randomize position */
+		  left: 290px; /* Randomize position */
+		  object-fit: cover;
+		  z-index: 0;
+		  transform: rotate(-5deg); /* Random rotation */
+		}
+
+		.item4 {
+		  position: absolute;
+		  top: 440px; /* Randomize position */
+		  left: 40px; /* Randomize position */
+		  object-fit: cover;
+		  z-index: 0;
+		  transform: rotate(5deg); /* Random rotation */
+		}
+		
+		.item5 {
+		  position: absolute;
+		  top: 20px; /* Randomize position */
+		  left: 50px; /* Randomize position */
+		  object-fit: cover;
+		  z-index: 0;
+		  transform: rotate(-5deg); /* Random rotation */
+		}
+
+		.item6 {
+		  position: absolute;
+		  top: 140px; /* Randomize position */
+		  left: 320px; /* Randomize position */
+		  object-fit: cover;
+		  z-index: 0;
+		  transform: rotate(2deg); /* Random rotation */
+		}
+		
+		.item7 {
+		  position: absolute;
+		  top: 450px; /* Randomize position */
+		  left: 300px; /* Randomize position */
+		  object-fit: cover;
+		  z-index: 0;
+		  transform: rotate(-3deg); /* Random rotation */
+		}
+
+		.item8 {
+		  position: absolute;
+		  top: 300px; /* Randomize position */
+		  left: 50px; /* Randomize position */
 		  object-fit: cover;
 		  z-index: 0;
 		  transform: rotate(5deg); /* Random rotation */
 		}
 
-		.item .img4 {
-		  position: absolute;
-		  top: 150px; /* Randomize position */
-		  left: -240px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(-5deg); /* Random rotation */
+      /* Title under each image */
+		.item h3 {
+		  margin-top: 10px; /* Give space from the image */
+		  font-size: 1.2em;
+		  font-weight: bold;
+		  color: #333;
+		  text-align: center;
+		  z-index: 1; /* Ensure the title is above the images */
 		}
-		
-		.item .img5 {
-		  position: absolute;
-		  top: 100px; /* Randomize position */
-		  left: 250px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(-5deg); /* Random rotation */
-		}
-
-		.item .img6 {
-		  position: absolute;
-		  top: 100px; /* Randomize position */
-		  left: 250px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(-5deg); /* Random rotation */
-		}
-
-      h3 {
-        margin: 10px 0 5px;
-        font-size: 1em;
-        color: #333;
-      }
 
       p {
         font-size: 0.9em;
@@ -150,7 +188,7 @@
       a {
         text-decoration: none;
         color: inherit;
-      }
+      }	
     </style>
   </head>
   <body>
@@ -159,34 +197,34 @@
       <div class="left-page">
         <h1 class="title-left">{{ page.titleLeft }}</h1>
 
-        <div class="item">
+        <div class="item item1">
           <a href="{% if page.lang == 'it' %}/it/projectdisplay.html{% else %}/en/projectdisplay.html{% endif %}">
-            <img src="{{ '/assets/MoonlightPeaks/moonlightpeaks_cover.jpg' }}" alt="Moonlight Peaks" class="img1">
+            <img src="{{ '/assets/MoonlightPeaks/moonlightpeaks_cover.jpg' }}" alt="Moonlight Peaks">
             <h3>Moonlight Peaks</h3>
             <p>{{ page.moonlightpeaks }}</p>
           </a>
         </div>
 
-        <div class="item">
+        <div class="item item2">
           <a href="{% if page.lang == 'it' %}/it/projects/fireescape.html{% else %}/en/projects/fireescape.html{% endif %}">
-            <img src="{{ '/assets/FireEscape/fireescape_cover.png' }}" alt="Fire Escape" class="img2">
+            <img src="{{ '/assets/FireEscape/fireescape_cover.png' }}" alt="Fire Escape">
             <h3>Fire Escape</h3>
             <p>{{ page.fireescape }}</p>
           </a>
         </div>
 
-        <div class="item">
+        <div class="item item3">
           <a href="{% if page.lang == 'it' %}/it/projects/plantasaurus.html{% else %}/en/projects/plantasaurus.html{% endif %}">
-            <img src="{{ '/assets/PlantASaurus/plantasaurus_cover.png' }}" alt="Plant-A-Saurus" class="img3">
+            <img src="{{ '/assets/PlantASaurus/plantasaurus_cover.png' }}" alt="Plant-A-Saurus">
             <h3>Plant-A-Saurus</h3>
             <p>{{ page.plantasaurus }}</p>
           </a>
         </div>
 
-        <div class="item">
+        <div class="item item4">
           <a href="{% if page.lang == 'it' %}/it/projects/shellwego.html{% else %}/en/projects/shellwego.html{% endif %}">
-            <img src="{{ '/assets/ShellWeGo/shellwego_cover.png' }}" alt="Shell We Go?" class="img4">
-            <h3>Shell We Go?</h3>
+            <img src="{{ '/assets/ShellWeGo/shellwego_cover.png' }}" alt="Shell We Go?">
+            <h3 class="title4">Shell We Go?</h3>
             <p>{{ page.shellwego }}</p>
           </a>
         </div>
@@ -196,34 +234,34 @@
       <div class="right-page">
         <h1 class="title-right">{{ page.titleRight }}</h1>
 
-        <div class="item">
+        <div class="item item5">
           <a href="{% if page.lang == 'it' %}/it/projects/witchslight.html{% else %}/en/projects/witchslight.html{% endif %}">
-            <img src="{{ '/assets/WitchsLight/witchslight_cover.png' }}" alt="Witch's Light" class="img5">
-            <h3>Witch's Light</h3>
+            <img src="{{ '/assets/WitchsLight/witchslight_cover.png' }}" alt="Witch's Light">
+            <h3 class="title5">Witch's Light</h3>
             <p>{{ page.witchslight }}</p>
           </a>
         </div>
 
-        <div class="item">
+        <div class="item item6">
           <a href="{% if page.lang == 'it' %}/it/projects/animaalostsoul.html{% else %}/en/projects/animaalostsoul.html{% endif %}">
-            <img src="{{ '/assets/AnimaALostSoul/animaalostsoul_cover.png' }}" alt="Anima A Lost Soul" class="img6">
-            <h3>Anima A Lost Soul</h3>
+            <img src="{{ '/assets/AnimaALostSoul/animaalostsoul_cover.png' }}" alt="Anima A Lost Soul">
+            <h3 class="title6">Anima A Lost Soul</h3>
             <p>{{ page.animaalostsoul }}</p>
           </a>
         </div>
 
-        <div class="item">
+        <div class="item item7">
           <a href="{% if page.lang == 'it' %}/it/projects/openyoureyes.html{% else %}/en/projects/openyoureyes.html{% endif %}">
-            <img src="{{ '/assets/OpenYourEyes/openyoureyes_cover.png' }}" alt="Open Your Eyes" class="img7">
-            <h3>Open Your Eyes</h3>
+            <img src="{{ '/assets/OpenYourEyes/openyoureyes_cover.png' }}" alt="Open Your Eyes">
+            <h3 class="title7">Open Your Eyes</h3>
             <p>{{ page.openyoureyes }}</p>
           </a>
         </div>
 
-        <div class="item">
+        <div class="item item8">
           <a href="{% if page.lang == 'it' %}/it/projects/flowerpower.html{% else %}/en/projects/flowerpower.html{% endif %}">
-            <img src="{{ '/assets/FlowerPower/flowerpower_cover.png' }}" alt="Flower Power" class="img8">
-            <h3>Flower Power</h3>
+            <img src="{{ '/assets/FlowerPower/flowerpower_cover.png' }}" alt="Flower Power">
+            <h3 class="title8">Flower Power</h3>
             <p>{{ page.flowerpower }}</p>
           </a>
         </div>
