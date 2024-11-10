@@ -31,29 +31,30 @@
 			width: 100%;
 			margin: 0;
 			overflow: hidden;
-		}
+			padding-top: 1vh;
+        }
 
         /* Main container that holds both left and right pages */
         .container {
             display: flex;
+            justify-content: space-between;
             width: 90%;
             max-width: 1200px;
-            height: 95vh;
-			background-color: transparent;
-            /*background-color: rgba(255, 255, 255, 0.9);*/
+            height: auto; /* Adjust height based on content */
+            background-color: transparent;
             border-radius: 10px;
             overflow: hidden;
         }
 
         /* Left and right page sections */
         .left-page, .right-page {
-            width: 50%;
+            width: 48%; /* Both pages take up almost half of the container */
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             overflow: hidden; 
-			margin-top: 20px;
+            margin-top: 20px;
         }
 
         /* Left page styling */
@@ -66,8 +67,8 @@
 		
 		.info {
 			display: flex;
-			gap: 20px; /* Space between the image and text */
-			margin-bottom: 0px;		
+			gap: 20px;
+			margin-bottom: 0px;
 		}
 
 		/* Image styling */
@@ -78,7 +79,7 @@
 		}
 
 		.infoText {
-			margin-top: 30px; /* Adjust this value as needed */
+			margin-top: 30px;
 			width: 100%;
 		}
 
@@ -89,7 +90,7 @@
 		}
 
 		.infoText p {
-			text-align: center; /* Center the text inside the paragraphs */
+			text-align: center;
 			display: block;
 			width: 100%;
 			margin: 0 auto;
@@ -109,13 +110,12 @@
         }
 
         /* Right page styling */
-
         .gallery-item {
             display: flex;
             align-items: center;
             gap: 40px;
-			margin-top: 10px;
-			margin-left: 80px;
+            margin-top: 10px;
+            margin-left: 80px;
             margin-bottom: 80px;
         }
 
@@ -132,10 +132,8 @@
 			transform: rotate(-5deg); 
 		}
 		
-		
-
         .gallery-item h3 {
-            font-size: 4em;
+            font-size: 3.5em;
             color: #333;
             margin: 0;
         }
@@ -177,14 +175,72 @@
         }
 
         /* Responsive adjustments */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .container {
-                flex-direction: column;
+                flex-direction: column; /* Stack left and right pages on smaller screens */
                 height: auto;
             }
 
             .left-page, .right-page {
-                width: 100%;
+                width: 100%; /* Full width for smaller screens */
+                padding: 10px;
+            }
+
+            .gallery-item {
+                flex-direction: column;
+                gap: 20px;
+                margin-left: 0;
+            }
+
+            .gallery-item img {
+                width: 100%; /* Images take full width on smaller screens */
+                max-width: 300px;
+            }
+
+            .gallery-item h3 {
+                font-size: 1.5em; /* Adjust text size */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .infoText h2 {
+                font-size: 1.5em;
+            }
+
+            .infoText p {
+                font-size: 1.2em;
+            }
+
+            .contacts p, .about p {
+                font-size: 1.2em;
+            }
+
+            .language-selector {
+                top: 10px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info img {
+                max-width: 100px;
+            }
+
+            .infoText h2 {
+                font-size: 1.2em;
+            }
+
+            .infoText p {
+                font-size: 1em;
+            }
+
+            .gallery-item h3 {
+                font-size: 1.2em;
             }
         }
     </style>
