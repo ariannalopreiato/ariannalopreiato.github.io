@@ -34,4 +34,10 @@ lang_links:
   en: "/en/projects/openyoureyes.html"
 
 font: "/assets/OpenYourEyes/SuperDream.ttf"
+
+gamePage: "https://ary-and-navy.itch.io/open-your-eyes"
+download: "Download exe"
+visitSite: "Open on Itch.io!"
+
+gameName: "openyoureyes"
 ---

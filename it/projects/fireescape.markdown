@@ -32,4 +32,10 @@ gallery:
 lang_links:
   it: "/it/projects/fireescape.html"
   en: "/en/projects/fireescape.html"
+
+gamePage: "https://zionfrost.itch.io/fire-escape"
+download: "Scarica exe"
+visitSite: "Apri su Itch.io!"
+
+gameName: "fireescape"
 ---

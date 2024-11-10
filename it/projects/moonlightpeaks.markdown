@@ -34,4 +34,6 @@ gallery:
 lang_links:
   it: "/it/projects/moonlightpeaks.html"
   en: "/en/projects/moonlightpeaks.html"
+
+gameName: "moonlightpeaks"
 ---

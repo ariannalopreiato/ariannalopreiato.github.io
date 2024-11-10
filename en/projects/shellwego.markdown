@@ -33,4 +33,10 @@ lang_links:
   en: "/en/projects/shellwego.html"
 
 font: "/assets/ShellWeGo/GochiHand-Regular.ttf"
+
+gamePage: "https://ary-and-navy.itch.io/shell-we-go"
+download: "Download exe"
+visitSite: "Open on Itch.io!"
+
+gameName: "shellwego"
 ---

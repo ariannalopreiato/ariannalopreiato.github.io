@@ -2,15 +2,8 @@
 layout: gamepage
 lang: "en"
 title: "Anima A Lost Soul"
-
 game: "The Game"
-game-description: "🐀 Turn into a rat in the moonlight<br>
-🐀 Kill the guards<br>
-🐀 Keep your health under control<br>
-🔮 Turn back into a witch in the torch light<br>
-🔮 Hide from the guards<br>
-🩸 Your health determines your bleeding<br>
-🩸 Escape the prison!<br>"
+game-description: "a very nice game"
 
 development: "The Development"
 development-description: "wa"
@@ -34,4 +27,10 @@ lang_links:
   en: "/en/projects/animaalostsoul.html"
 
 font: "/assets/AnimaALostSoul/Travelisty.otf"
+
+gamePage: "https://ary-and-navy.itch.io/anima-a-lost-soul"
+download: "Download exe"
+visitSite: "Open on Itch.io!"
+
+gameName: "animaalostsoul"
 ---

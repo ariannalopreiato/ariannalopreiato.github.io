@@ -34,4 +34,10 @@ lang_links:
   en: "/en/projects/plantasaurus.html"
 
 font: "/assets/PlantASaurus/QuietlyEndureRegular.otf"
+
+gamePage: "https://kayahx.itch.io/plantasaurus"
+download: "Download exe"
+visitSite: "Open on Itch.io!"
+
+gameName: "plantasaurus"
 ---

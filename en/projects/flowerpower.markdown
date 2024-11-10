@@ -34,4 +34,10 @@ lang_links:
   en: "/en/projects/flowerpower.html"
 
 font: "/assets/FlowerPower/SundayBest.ttf"
+
+gamePage: "https://ary-and-navy.itch.io/flower-power"
+download: "Download exe"
+visitSite: "Open on Itch.io!"
+
+gameName: "flowerpower"
 ---

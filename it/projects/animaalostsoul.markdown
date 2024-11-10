@@ -34,4 +34,10 @@ lang_links:
   en: "/en/projects/animaalostsoul.html"
 
 font: "/assets/AnimaALostSoul/Travelisty.otf"
+
+gamePage: "https://ary-and-navy.itch.io/anima-a-lost-soul"
+download: "Scarica exe"
+visitSite: "Apri su Itch.io!"
+
+gameName: "animaalostsoul"
 ---
