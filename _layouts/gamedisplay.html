@@ -91,7 +91,6 @@
 
 	/* Images inside the items */
 	.item img {
-	  width: 100%; /* Images take the full width of their parent container */
 	  border-radius: 20px;
 	  max-height: 180px;
 	  object-fit: cover;
@@ -104,7 +103,7 @@
 	.item4 { position: absolute; top: 440px; left: 40px; transform: rotate(5deg); }
 	.item5 { position: absolute; top: 20px; left: 50px; transform: rotate(-5deg); }
 	.item6 { position: absolute; top: 140px; left: 320px; transform: rotate(2deg); }
-	.item7 { position: absolute; top: 450px; left: 300px; transform: rotate(-3deg); }
+	.item7 { position: absolute; top: 430px; left: 300px; transform: rotate(-3deg); }
 	.item8 { position: absolute; top: 300px; left: 50px; transform: rotate(5deg); }
 
 	/* Title under each image */
@@ -114,6 +113,16 @@
 	  font-weight: bold;
 	  color: #333;
 	  text-align: center;
+	}
+	
+	.logo {
+		position: absolute;  /* Position logo relative to .item */
+		height: 40px;  /* Set fixed height */
+		width: 40px;  /* Set fixed width for a circular logo */
+		border-radius: 50%;  /* Make the image round */
+		object-fit: cover;  /* Ensure the logo fits the circle without stretching */
+		bottom: 35px;
+		left: 180px;
 	}
 
 	/* Media Query for Tablet Devices and Smaller Screens */
@@ -190,28 +199,32 @@
         <div class="item item1">
           <a href="{% if page.lang == 'it' %}/it/projectdisplay.html{% else %}/en/projectdisplay.html{% endif %}">
             <img src="{{ '/assets/MoonlightPeaks/moonlightpeaks_cover.jpg' }}" alt="Moonlight Peaks">
-            <h3>Moonlight Peaks</h3>
+            <img src="{{ '/assets/unityLogo.png' }}" class="logo">
+			<h3>Moonlight Peaks</h3>
           </a>
         </div>
 
         <div class="item item2">
           <a href="{% if page.lang == 'it' %}/it/projects/fireescape.html{% else %}/en/projects/fireescape.html{% endif %}">
             <img src="{{ '/assets/FireEscape/fireescape_cover.png' }}" alt="Fire Escape">
-            <h3>Fire Escape</h3>
+            <img src="{{ '/assets/unityLogo.png' }}" class="logo">
+			<h3>Fire Escape</h3>
           </a>
         </div>
 
         <div class="item item3">
           <a href="{% if page.lang == 'it' %}/it/projects/plantasaurus.html{% else %}/en/projects/plantasaurus.html{% endif %}">
             <img src="{{ '/assets/PlantASaurus/plantasaurus_cover.png' }}" alt="Plant-A-Saurus">
-            <h3>Plant-A-Saurus</h3>
+            <img src="{{ '/assets/unityLogo.png' }}" class="logo">
+			<h3>Plant-A-Saurus</h3>
           </a>
         </div>
 
         <div class="item item4">
           <a href="{% if page.lang == 'it' %}/it/projects/shellwego.html{% else %}/en/projects/shellwego.html{% endif %}">
             <img src="{{ '/assets/ShellWeGo/shellwego_cover.png' }}" alt="Shell We Go?">
-            <h3>Shell We Go?</h3>
+            <img src="{{ '/assets/unrealLogo.png' }}" class="logo">
+			<h3>Shell We Go?</h3>
           </a>
         </div>
       </div>
@@ -223,28 +236,32 @@
         <div class="item item5">
           <a href="{% if page.lang == 'it' %}/it/projects/witchslight.html{% else %}/en/projects/witchslight.html{% endif %}">
             <img src="{{ '/assets/WitchsLight/witchslight_cover.png' }}" alt="Witch's Light">
-            <h3>Witch's Light</h3>
+            <img src="{{ '/assets/unityLogo.png' }}" class="logo">
+			<h3>Witch's Light</h3>
           </a>
         </div>
 
         <div class="item item6">
           <a href="{% if page.lang == 'it' %}/it/projects/animaalostsoul.html{% else %}/en/projects/animaalostsoul.html{% endif %}">
             <img src="{{ '/assets/AnimaALostSoul/animaalostsoul_cover.png' }}" alt="Anima A Lost Soul">
-            <h3>Anima A Lost Soul</h3>
+            <img src="{{ '/assets/unrealLogo.png' }}" class="logo">
+			<h3>Anima A Lost Soul</h3>
           </a>
         </div>
 
         <div class="item item7">
           <a href="{% if page.lang == 'it' %}/it/projects/openyoureyes.html{% else %}/en/projects/openyoureyes.html{% endif %}">
             <img src="{{ '/assets/OpenYourEyes/openyoureyes_cover.png' }}" alt="Open Your Eyes">
-            <h3>Open Your Eyes</h3>
+            <img src="{{ '/assets/unrealLogo.png' }}" class="logo">
+			<h3>Open Your Eyes</h3>
           </a>
         </div>
 
         <div class="item item8">
           <a href="{% if page.lang == 'it' %}/it/projects/flowerpower.html{% else %}/en/projects/flowerpower.html{% endif %}">
             <img src="{{ '/assets/FlowerPower/flowerpower_cover.png' }}" alt="Flower Power">
-            <h3>Flower Power</h3>
+            <img src="{{ '/assets/unityLogo.png' }}" class="logo">
+			<h3>Flower Power</h3>
           </a>
         </div>
       </div>
