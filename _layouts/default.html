@@ -1,245 +1,259 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'en' }}">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ page.title }}</title>
-	</head>
-	<body>
-		<main>
-			<section class="image-container">
-				<img src="{{ '/assets/headerimage.png' }}" style="width: 100%; margin: 0;">
-				<h2>{{ page.header_title }}</h2>
-				<p>{{ page.header_subtitle }}</p>
-			</section>
-				
-			<style>
-					.image-container {
-						position: relative; /* Necessario per il posizionamento degli elementi figli */
-						text-align: center; /* Centro il contenuto all'interno della sezione */
-						margin-bottom: 20px;
-					}
-
-					h2, p {
-						position: absolute; /* Posizionamento assoluto per sovrapporre il testo all'immagine */
-						left: 50%; /* Posizione orizzontale al centro */
-						transform: translateX(-50%); /* Sposta il testo per centrarlo */
-						color: white; /* Colore del testo */
-						margin: 0; /* Rimuove margini */
-					}
-
-					h2 {
-						top: 40%; /* Posizione verticale del titolo */
-						font-size: 2.5em; /* Dimensione del titolo */
-					}
-					
-					p {
-						top: 50%; /* Posizione verticale della descrizione */
-						font-size: 1.5em; /* Dimensione della descrizione */
-					}
-			</style>
-			
-			<div class="language-selector" onclick="toggleDropdown()">
-			{% if page.lang == 'it' %}
-				<img src="{{ '/assets/it_flag.png' }}" alt="Italiano">
-			{% else %}
-				<img src="{{ '/assets/en_flag.jpg' }}" alt="English">
-			{% endif %}
-				<div class="language-dropdown" id="languageDropdown">
-					<a href="/it/index.html"><img src="{{ '/assets/it_flag.png' }}" alt="Italiano"> Italiano</a>
-					<a href="/en/index.html"><img src="{{ '/assets/en_flag.jpg' }}" alt="English"> English</a>
-				</div>
-			</div>
-			<style>
-				/* Stile per il pulsante di lingua e il menu a tendina */
-				.language-selector {
-					position: absolute;
-					top: 20px;
-					right: 50px;
-					cursor: pointer;
-					display: inline-block;
-				}
-
-				.language-selector img {
-					width: 30px;
-					height: auto;
-					border-radius: 50%; /* Bandiera rotonda */
-				}
-
-				.language-dropdown {
-					display: none; /* Nascondi il menu di default */
-					position: absolute;
-					top: 40px;
-					right: 0;
-					background-color: white;
-					box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-					z-index: 1;
-					border-radius: 5px;
-				}
-
-				.language-dropdown a {
-					color: black;
-					padding: 10px 15px;
-					text-decoration: none;
-					display: block;
-				}
-
-				.language-dropdown a:hover {
-					background-color: #f1f1f1;
-				}
-			</style>
-			
-			<h4>{{ page.description }}</h4>
-
-		<section class="gallery">
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projectdisplay.html{% else %}/en/projectdisplay.html{% endif %}">
-					<img src="{{ '/assets/MoonlightPeaks/moonlightpeaks_cover.jpg' }}">
-					<h3>Moonlight Peaks</h3>
-					<p>{{ page.moonlightpeaks }}</p>
-				</a>
-			</div>
-			
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projects/fireescape.html{% else %}/en/projects/fireescape.html{% endif %}">
-					<img src="{{ '/assets/FireEscape/fireescape_cover.png' }}">
-					<h3>Fire Escape</h3>
-					<p>{{ page.fireescape }}</p>
-				</a>
-			</div>
-			
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projects/plantasaurus.html{% else %}/en/projects/plantasaurus.html{% endif %}">
-					<img src="{{ '/assets/PlantASaurus/plantasaurus_cover.png' }}">
-					<h3>Plant-A-Saurus</h3>
-					<p>{{ page.plantasaurus }}</p>
-				</a>
-			</div>
-			
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projects/witchslight.html{% else %}/en/projects/witchslight.html{% endif %}">
-					<img src="{{ '/assets/WitchsLight/witchslight_cover.png' }}">
-					<h3>Witch's Light</h3>
-					<p>{{ page.witchslight }}</p>
-				</a>
-			</div>
-			
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projects/animaalostsoul.html{% else %}/en/projects/animaalostsoul.html{% endif %}">
-					<img src="{{ '/assets/AnimaALostSoul/animaalostsoul_cover.png' }}">
-					<h3>Anima A Lost Soul</h3>
-					<p>{{ page.animaalostsoul }}</p>
-				</a>
-			</div>
-			
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projects/openyoureyes.html{% else %}/en/projects/openyoureyes.html{% endif %}">
-					<img src="{{ '/assets/OpenYourEyes/openyoureyes_cover.png' }}">
-					<h3>Open Your Eyes</h3>
-					<p>{{ page.openyoureyes }}</p>
-				</a>
-			</div>
-			
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projects/flowerpower.html{% else %}/en/projects/flowerpower.html{% endif %}">
-					<img src="{{ '/assets/FlowerPower/flowerpower_cover.png' }}">
-					<h3>Flower Power</h3>
-					<p>{{ page.flowerpower }}</p>
-				</a>
-			</div>
-			
-			<div class="item">
-				<a href="{% if page.lang == 'it' %}/it/projects/shellwego.html{% else %}/en/projects/shellwego.html{% endif %}">
-					<img src="{{ '/assets/ShellWeGo/shellwego_cover.png' }}">
-					<h3>Shell We Go?</h3>
-					<p>{{ page.shellwego }}</p>
-				</a>
-			</div>
-		</section>
-
-		<style>
-			.gallery {
-				display: flex; /* Utilizza Flexbox per il layout */
-				justify-content: left; /* Centra la galleria */
-				margin: 50px 160px; /* Spazio sopra e sotto la galleria e 40px ai lati */
-				flex-wrap: wrap; /* Permette di avvolgere le immagini in più righe */
-			}
-
-			.item {
-				margin: 10px; /* Margine di 10px attorno a ciascun elemento per separare le immagini */
-				text-align: center; /* Centro il testo per titolo e descrizione */
-				width: calc(33.33% - 20px); /* Tre colonne con margine: 100% diviso 3 meno il margine */
-				max-width: 500px; /* Larghezza massima per ciascun item */
-			}
-
-			.item img {
-				width: 100%; /* Le immagini riempiono completamente l'elemento */
-				height: auto; /* Mantiene le proporzioni dell'immagine */
-				border-radius: 80px; /* Angoli arrotondati (opzionale) */
-				height: 300px;
-			}
-
-			h3 {
-				margin: 10px 0 5px; /* Margini sopra e sotto il titolo */
-				font-size: 1.5em; /* Dimensione del font per il titolo */
-			}
-
-			p {
-				font-size: 1em; /* Dimensione del font per la descrizione */
-				color: #555; /* Colore del testo della descrizione */
-			}
-
-			/* Media query per rendere la galleria responsiva */
-			@media (max-width: 768px) {
-				.item {
-					width: calc(50% - 20px); /* Due colonne su schermi più piccoli */
-				}
-			}
-
-			@media (max-width: 480px) {
-				.item {
-					width: 100%;
-					margin: 10px 0;
-				}
-
-				.gallery {
-					margin: 20px 10px;
-					padding: 10px;
-				}
-
-				h3 {
-					font-size: 1.2em; /* Riduci un po' il font per il titolo */
-				}
-
-				p {
-					font-size: 0.9em; /* Riduci il font per una lettura più comoda */
-				}
-
-				.item img {
-					width: 100%; /* Mantiene la larghezza dell’immagine dentro al contenitore */
-					height: auto; /* Permette all’immagine di mantenere le proporzioni */
-					max-height: 300px; /* Limita l'altezza massima per non sovraccaricare la pagina */
-				}
-			}
-		</style>
-		</main>
-
-		<footer>
-			<p>&copy; {{ site.time | date: '%Y' }} Il Mio Sito Personale</p>
-		</footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+		@font-face {
+			font-family: 'TitleFont';
+			src: url("/assets/fonts/Mabook.ttf") format("opentype");
+			font-weight: normal;
+			font-style: normal;
+		}
 		
-		<script>
-			function toggleDropdown() {
-				const dropdown = document.getElementById('languageDropdown');
-				dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-			}
+		@font-face {
+			font-family: 'TextFont';
+			src: url("/assets/fonts/feltful_regular.otf") format("opentype");
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+        body {
+			background-image: url('/assets/background.png');
+			background-size: contain;
+			background-position: center;
+			background-attachment: fixed;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			width: 100%;
+			margin: 0;
+			overflow: hidden;
+		}
 
-			// Chiude il menu a tendina quando si clicca fuori di esso
-			window.onclick = function(event) {
-				if (!event.target.matches('.language-selector, .language-selector *')) {
-					document.getElementById('languageDropdown').style.display = 'none';
-				}
-			}
-		</script>
-	</body>
+        /* Main container that holds both left and right pages */
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            height: 95vh;
+			background-color: transparent;
+            /*background-color: rgba(255, 255, 255, 0.9);*/
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Left and right page sections */
+        .left-page, .right-page {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden; 
+			margin-top: 20px;
+        }
+
+        /* Left page styling */
+        .left-page img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+		
+		.info {
+			display: flex;
+			gap: 20px; /* Space between the image and text */
+			margin-bottom: 0px;		
+		}
+
+		/* Image styling */
+		.info img {
+			width: 100%;
+			max-width: 150px;
+			border-radius: 10px;
+		}
+
+		.infoText {
+			margin-top: 30px; /* Adjust this value as needed */
+			width: 100%;
+		}
+
+		.infoText h2 {
+			font-size: 1.8em;
+			color: #333;
+			margin: 0;
+		}
+
+		.infoText p {
+			text-align: center; /* Center the text inside the paragraphs */
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			font-size: 1.5em;
+			color: #555;
+			line-height: 1.5;
+		}
+
+        .contacts, .about {
+            margin-bottom: 20px;
+        }
+
+        .contacts p, .about p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Right page styling */
+
+        .gallery-item {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+			margin-top: 10px;
+			margin-left: 80px;
+            margin-bottom: 80px;
+        }
+
+        .gallery-item img {
+            width: 200px;
+            height: auto;
+        }
+		
+		.imgGame, .textArt {
+			transform: rotate(5deg); 
+		}
+
+		.imgArt, .textGame {
+			transform: rotate(-5deg); 
+		}
+		
+		
+
+        .gallery-item h3 {
+            font-size: 4em;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Language selector */
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            cursor: pointer;
+        }
+
+        .language-selector img {
+            width: 30px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .language-dropdown a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .language-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .left-page, .right-page {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Page Content -->
+        <div class="left-page">
+            <section class="info">
+				<img src="{{ '/assets/bigpolaroid.png' }}">
+				<div class="infoText">
+					<h2>{{page.infoTitle}}</h2> <br>
+					<p class="centered-text">{{ page.infoSubtitle }}</p>
+					<p class="centered-text">{{ page.infoJob }}</p>
+				</div>
+            </section>
+
+            <section class="contacts">
+                <h2>{{ page.contactsTitle }}</h2>
+                <p>contacts</p>
+            </section>
+
+            <section class="about">
+                <h2>{{page.aboutTitle}}</h2>
+                <p>{{ page.aboutSubtitle }}</p>
+            </section>
+        </div>
+
+        <!-- Right Page Content -->
+        <div class="right-page">
+            <div class="gallery-item">
+				<h3 class="textGame">{{ page.games }}</h3>
+				<a href="{% if page.lang == 'it' %}/it/projectdisplay.html{% else %}/en/projectdisplay.html{% endif %}">	<img src="{{ '/assets/smallPolaroid.png' }}" class="imgGame">
+				</a>
+            </div>
+            <div class="gallery-item">
+				<a href="{% if page.lang == 'it' %}/it/projectdisplay.html{% else %}/en/projectdisplay.html{% endif %}">			
+                <img src="{{ '/assets/smallPolaroid.png' }}" class="imgArt">
+				</a>
+                <h3 class="textArt">{{ page.art }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="language-selector" onclick="toggleDropdown()">
+        {% if page.lang == 'it' %}
+            <img src="{{ '/assets/it_flag.png' }}" alt="Italiano">
+        {% else %}
+            <img src="{{ '/assets/en_flag.jpg' }}" alt="English">
+        {% endif %}
+        <div class="language-dropdown" id="languageDropdown">
+            <a href="/it/index.html"><img src="{{ '/assets/it_flag.png' }}" alt="Italiano"> Italiano</a>
+            <a href="/en/index.html"><img src="{{ '/assets/en_flag.jpg' }}" alt="English"> English</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('languageDropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Close dropdown when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.language-selector, .language-selector *')) {
+                document.getElementById('languageDropdown').style.display = 'none';
+            }
+        }
+    </script>
+</body>
 </html>
