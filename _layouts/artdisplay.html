@@ -60,19 +60,9 @@
 		  font-size: 3em;
 		  font-weight: bold;
 		  font-family: 'MainTitleFont', sans-serif;
-		  transform: rotate(-8deg);
+		  transform: rotate(-2deg);
 		  color: #333;
-		}
-
-		.title-right {
-		  position: absolute;
-		  top: 10px;
-		  right: 50px;
-		  font-size: 3em;
-		  font-weight: bold;
-		  font-family: 'MainTitleFont', sans-serif;
-		  transform: rotate(4deg);
-		  color: #333;
+		  margin-top: 10px;
 		}
 
 		/* Styling for each item container */
@@ -196,73 +186,53 @@
       <!-- Left Page -->
       <div class="left-page">
         <h1 class="title-left">{{ page.titleLeft }}</h1>
+		<p class="description">{{ page.description }}</p>
+		<h2 class="3d">3D</h2>
 
         <div class="item item1">
           <a href="{% if page.lang == 'it' %}/it/projectdisplay.html{% else %}/en/projectdisplay.html{% endif %}">
             <img src="{{ '/assets/MoonlightPeaks/moonlightpeaks_cover.jpg' }}" alt="Moonlight Peaks">
-            <h3>Moonlight Peaks</h3>
-            <p>{{ page.moonlightpeaks }}</p>
+            <h3>{{ page.bridge }}</h3>
           </a>
         </div>
 
         <div class="item item2">
           <a href="{% if page.lang == 'it' %}/it/projects/fireescape.html{% else %}/en/projects/fireescape.html{% endif %}">
             <img src="{{ '/assets/FireEscape/fireescape_cover.png' }}" alt="Fire Escape">
-            <h3>Fire Escape</h3>
-            <p>{{ page.fireescape }}</p>
+            <h3>{{ page.station }}</h3>
           </a>
         </div>
 
         <div class="item item3">
           <a href="{% if page.lang == 'it' %}/it/projects/plantasaurus.html{% else %}/en/projects/plantasaurus.html{% endif %}">
             <img src="{{ '/assets/PlantASaurus/plantasaurus_cover.png' }}" alt="Plant-A-Saurus">
-            <h3>Plant-A-Saurus</h3>
-            <p>{{ page.plantasaurus }}</p>
-          </a>
-        </div>
-
-        <div class="item item4">
-          <a href="{% if page.lang == 'it' %}/it/projects/shellwego.html{% else %}/en/projects/shellwego.html{% endif %}">
-            <img src="{{ '/assets/ShellWeGo/shellwego_cover.png' }}" alt="Shell We Go?">
-            <h3 class="title4">Shell We Go?</h3>
-            <p>{{ page.shellwego }}</p>
+            <h3>{{ page.house }} </h3>
           </a>
         </div>
       </div>
 
       <!-- Right Page -->
       <div class="right-page">
-        <h1 class="title-right">{{ page.titleRight }}</h1>
+        <h2 class="2d">2D</h2>
 
         <div class="item item5">
           <a href="{% if page.lang == 'it' %}/it/projects/witchslight.html{% else %}/en/projects/witchslight.html{% endif %}">
             <img src="{{ '/assets/WitchsLight/witchslight_cover.png' }}" alt="Witch's Light">
-            <h3 class="title5">Witch's Light</h3>
-            <p>{{ page.witchslight }}</p>
+            <h3>{{ page.canyon }}</h3>
           </a>
         </div>
 
         <div class="item item6">
           <a href="{% if page.lang == 'it' %}/it/projects/animaalostsoul.html{% else %}/en/projects/animaalostsoul.html{% endif %}">
             <img src="{{ '/assets/AnimaALostSoul/animaalostsoul_cover.png' }}" alt="Anima A Lost Soul">
-            <h3 class="title6">Anima A Lost Soul</h3>
-            <p>{{ page.animaalostsoul }}</p>
+            <h3>{{ page.garden }}</h3>
           </a>
         </div>
 
         <div class="item item7">
           <a href="{% if page.lang == 'it' %}/it/projects/openyoureyes.html{% else %}/en/projects/openyoureyes.html{% endif %}">
             <img src="{{ '/assets/OpenYourEyes/openyoureyes_cover.png' }}" alt="Open Your Eyes">
-            <h3 class="title7">Open Your Eyes</h3>
-            <p>{{ page.openyoureyes }}</p>
-          </a>
-        </div>
-
-        <div class="item item8">
-          <a href="{% if page.lang == 'it' %}/it/projects/flowerpower.html{% else %}/en/projects/flowerpower.html{% endif %}">
-            <img src="{{ '/assets/FlowerPower/flowerpower_cover.png' }}" alt="Flower Power">
-            <h3 class="title8">Flower Power</h3>
-            <p>{{ page.flowerpower }}</p>
+            <h3>{{ page.doodle }}</h3>
           </a>
         </div>
       </div>

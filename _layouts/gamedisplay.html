@@ -32,152 +32,143 @@
         overflow: hidden;
       }
 
-      .book-container {
-        display: flex;
-        width: 80%;
-        height: 95vh;
-        overflow: hidden;
-        background-color: transparent;
-      }
+/* Book container */
+.book-container {
+  display: flex;
+  width: 90%; /* Take 90% of the screen width, which gives it some margin */
+  max-width: 1200px; /* Max width to prevent it stretching too much on larger screens */
+  height: 95vh;
+  overflow: hidden;
+  margin: 0 auto; /* Center horizontally */
+  gap: 20px; /* Gap between the pages */
+}
 
-      /* Left and Right Pages */
-      .left-page,.right-page {
-		  width: 50%;
-		  display: flex;
-		  flex-direction: row;
-		  flex-wrap: wrap; /* Allows items to wrap onto multiple rows */
-		  gap: 10px;
-		  padding: 20px;
-		  align-items: flex-start; /* Align items to the start vertically */
-		  background-color: transparent;
-		  position: relative;
-		}
+/* Left and Right Pages */
+.left-page, .right-page {
+  width: 50%; /* Each takes 50% of the screen */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 10px; /* Space between items */
+  padding: 20px;
+  align-items: flex-start;
+  background-color: transparent;
+  position: relative;
+}
 
-		/* Title styling */
-		.title-left {
-		  position: absolute;
-		  left: 50px;
-		  font-size: 3em;
-		  font-weight: bold;
-		  font-family: 'MainTitleFont', sans-serif;
-		  transform: rotate(-8deg);
-		  color: #333;
-		}
+/* Title styling */
+.title-left, .title-right {
+  font-size: 3em; /* Font size for titles */
+  font-weight: bold;
+  font-family: 'MainTitleFont', sans-serif;
+  color: #333;
+  position: absolute;
+}
 
-		.title-right {
-		  position: absolute;
-		  top: 10px;
-		  right: 50px;
-		  font-size: 3em;
-		  font-weight: bold;
-		  font-family: 'MainTitleFont', sans-serif;
-		  transform: rotate(4deg);
-		  color: #333;
-		}
+.title-left {
+  left: 50px;
+  transform: rotate(-8deg);
+}
 
-		/* Styling for each item container */
-		.item {
-		  position: relative; /* Establishes the reference point for absolute positioning */
-		  width: 35%;
-		  height: auto;
-		  margin: 20px;
-		  display: flex;
-		  flex-direction: column;
-		  justify-content: center;
-		  align-items: center;
-		  text-align: center;
-		  background-color: transparent;
-		  font-family: 'TitleFont', sans-serif;
-		}
-		
-		.item img {
-		  width: 100%; /* Full width of its flex container */
-		  border-radius: 20px;
-		  max-height: 180px;
-		  object-fit: cover;
-		}
+.title-right {
+  top: 10px;
+  right: 50px;
+  transform: rotate(4deg);
+}
 
-		.item1 {
-		  position: absolute;
-		  top: 40px; /* Randomize position */
-		  left: 290px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(6deg); /* Random rotation */
-		}
-		
-		.item2 {
-		  position: absolute;
-		  top: 180px; /* Randomize the top position */
-		  left: 30px; /* Randomize the left position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(2deg); /* Slight rotation to create randomness */
-		}
+/* Item styling */
+.item {
+  position: relative;
+  width: 35%; /* Items take 35% of the page width */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'TitleFont', sans-serif;
+}
 
-		.item3 {
-		  position: absolute;
-		  top: 330px; /* Randomize position */
-		  left: 290px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(-5deg); /* Random rotation */
-		}
+/* Images inside the items */
+.item img {
+  width: 100%; /* Images take the full width of their parent container */
+  border-radius: 20px;
+  max-height: 180px;
+  object-fit: cover;
+}
 
-		.item4 {
-		  position: absolute;
-		  top: 440px; /* Randomize position */
-		  left: 40px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(5deg); /* Random rotation */
-		}
-		
-		.item5 {
-		  position: absolute;
-		  top: 20px; /* Randomize position */
-		  left: 50px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(-5deg); /* Random rotation */
-		}
+/* Positions for items */
+.item1 { position: absolute; top: 40px; left: 290px; transform: rotate(6deg); }
+.item2 { position: absolute; top: 180px; left: 30px; transform: rotate(2deg); }
+.item3 { position: absolute; top: 330px; left: 290px; transform: rotate(-5deg); }
+.item4 { position: absolute; top: 440px; left: 40px; transform: rotate(5deg); }
+.item5 { position: absolute; top: 20px; left: 50px; transform: rotate(-5deg); }
+.item6 { position: absolute; top: 140px; left: 320px; transform: rotate(2deg); }
+.item7 { position: absolute; top: 450px; left: 300px; transform: rotate(-3deg); }
+.item8 { position: absolute; top: 300px; left: 50px; transform: rotate(5deg); }
 
-		.item6 {
-		  position: absolute;
-		  top: 140px; /* Randomize position */
-		  left: 320px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(2deg); /* Random rotation */
-		}
-		
-		.item7 {
-		  position: absolute;
-		  top: 450px; /* Randomize position */
-		  left: 300px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(-3deg); /* Random rotation */
-		}
+/* Title under each image */
+.item h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
 
-		.item8 {
-		  position: absolute;
-		  top: 300px; /* Randomize position */
-		  left: 50px; /* Randomize position */
-		  object-fit: cover;
-		  z-index: 0;
-		  transform: rotate(5deg); /* Random rotation */
-		}
+/* Media Query for Tablet Devices and Smaller Screens */
+@media (max-width: 1024px) {
+  .book-container {
+    flex-direction: column;
+    width: 90%; /* Allow it to take up most of the screen width */
+  }
 
-      /* Title under each image */
-		.item h3 {
-		  margin-top: 10px; /* Give space from the image */
-		  font-size: 1.2em;
-		  font-weight: bold;
-		  color: #333;
-		  text-align: center;
-		  z-index: 1; /* Ensure the title is above the images */
-		}
+  .left-page, .right-page {
+    width: 100%; /* Make both pages take full width */
+    padding: 15px;
+  }
+
+  .item {
+    width: 80%; /* Increase width of items to fill available space */
+    margin: 10px 0; /* Adjust margins for smaller screens */
+  }
+
+  .title-left, .title-right {
+    font-size: 2em; /* Reduce title size for smaller screens */
+  }
+
+  .item img {
+    max-height: 160px; /* Reduce the image height */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .book-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left-page, .right-page {
+    width: 100%; /* Full width for mobile screens */
+    padding: 10px;
+  }
+
+  .item {
+    width: 90%; /* Increase width of items */
+    margin: 15px auto; /* Center items */
+  }
+
+  .title-left, .title-right {
+    font-size: 1.5em; /* Reduce title size */
+  }
+
+  .item img {
+    max-height: 150px; /* Adjust image height */
+  }
+}
+
 
       p {
         font-size: 0.9em;
@@ -201,7 +192,6 @@
           <a href="{% if page.lang == 'it' %}/it/projectdisplay.html{% else %}/en/projectdisplay.html{% endif %}">
             <img src="{{ '/assets/MoonlightPeaks/moonlightpeaks_cover.jpg' }}" alt="Moonlight Peaks">
             <h3>Moonlight Peaks</h3>
-            <p>{{ page.moonlightpeaks }}</p>
           </a>
         </div>
 
@@ -209,7 +199,6 @@
           <a href="{% if page.lang == 'it' %}/it/projects/fireescape.html{% else %}/en/projects/fireescape.html{% endif %}">
             <img src="{{ '/assets/FireEscape/fireescape_cover.png' }}" alt="Fire Escape">
             <h3>Fire Escape</h3>
-            <p>{{ page.fireescape }}</p>
           </a>
         </div>
 
@@ -217,15 +206,13 @@
           <a href="{% if page.lang == 'it' %}/it/projects/plantasaurus.html{% else %}/en/projects/plantasaurus.html{% endif %}">
             <img src="{{ '/assets/PlantASaurus/plantasaurus_cover.png' }}" alt="Plant-A-Saurus">
             <h3>Plant-A-Saurus</h3>
-            <p>{{ page.plantasaurus }}</p>
           </a>
         </div>
 
         <div class="item item4">
           <a href="{% if page.lang == 'it' %}/it/projects/shellwego.html{% else %}/en/projects/shellwego.html{% endif %}">
             <img src="{{ '/assets/ShellWeGo/shellwego_cover.png' }}" alt="Shell We Go?">
-            <h3 class="title4">Shell We Go?</h3>
-            <p>{{ page.shellwego }}</p>
+            <h3>Shell We Go?</h3>
           </a>
         </div>
       </div>
@@ -237,32 +224,28 @@
         <div class="item item5">
           <a href="{% if page.lang == 'it' %}/it/projects/witchslight.html{% else %}/en/projects/witchslight.html{% endif %}">
             <img src="{{ '/assets/WitchsLight/witchslight_cover.png' }}" alt="Witch's Light">
-            <h3 class="title5">Witch's Light</h3>
-            <p>{{ page.witchslight }}</p>
+            <h3>Witch's Light</h3>
           </a>
         </div>
 
         <div class="item item6">
           <a href="{% if page.lang == 'it' %}/it/projects/animaalostsoul.html{% else %}/en/projects/animaalostsoul.html{% endif %}">
             <img src="{{ '/assets/AnimaALostSoul/animaalostsoul_cover.png' }}" alt="Anima A Lost Soul">
-            <h3 class="title6">Anima A Lost Soul</h3>
-            <p>{{ page.animaalostsoul }}</p>
+            <h3>Anima A Lost Soul</h3>
           </a>
         </div>
 
         <div class="item item7">
           <a href="{% if page.lang == 'it' %}/it/projects/openyoureyes.html{% else %}/en/projects/openyoureyes.html{% endif %}">
             <img src="{{ '/assets/OpenYourEyes/openyoureyes_cover.png' }}" alt="Open Your Eyes">
-            <h3 class="title7">Open Your Eyes</h3>
-            <p>{{ page.openyoureyes }}</p>
+            <h3>Open Your Eyes</h3>
           </a>
         </div>
 
         <div class="item item8">
           <a href="{% if page.lang == 'it' %}/it/projects/flowerpower.html{% else %}/en/projects/flowerpower.html{% endif %}">
             <img src="{{ '/assets/FlowerPower/flowerpower_cover.png' }}" alt="Flower Power">
-            <h3 class="title8">Flower Power</h3>
-            <p>{{ page.flowerpower }}</p>
+            <h3>Flower Power</h3>
           </a>
         </div>
       </div>
