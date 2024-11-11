@@ -337,7 +337,9 @@
 			
 			<!-- Buttons -->
 			<div class="button-container">
-				<a href="/path/to/download/file.zip" class="button download-button">{{ page.download }}</a>
+				{% if page.download_url %}
+					<a href="{{ page.download_url }}" class="button download-button">{{ page.download }}</a>
+				{% endif %}
 				<a href={{page.gamePage}} class="button game-page-button">{{ page.visitSite }}</a>
 			</div>
         </div>
