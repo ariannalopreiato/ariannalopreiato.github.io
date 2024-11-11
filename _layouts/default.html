@@ -35,15 +35,18 @@
 
         /* Main container that holds both left and right pages */
         .container {
-            display: flex;
-            justify-content: space-between;
-            width: 90%;
-            max-width: 1200px;
-            height: auto; /* Adjust height based on content */
-            background-color: transparent;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+			display: flex;
+			width: 90%;
+			max-width: 1200px;
+			height: 97vh; /* Full height of the viewport */
+			position: absolute;
+			top: 30px; /* Adjust this value to control how much lower it starts from the top */
+			left: 50%; /* Center the container horizontally */
+			transform: translateX(-50%); /* Correct the centering */
+			background-color: transparent; /* Gray background color */
+			border-radius: 10px;
+			overflow: hidden;
+		}
 
         /* Left and right page sections */
         .left-page, .right-page {
