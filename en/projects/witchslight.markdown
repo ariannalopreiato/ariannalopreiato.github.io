@@ -33,7 +33,10 @@ lang_links:
   it: "/it/projects/witchslight.html"
   en: "/en/projects/witchslight.html"
 
-font: "/assets/WitchsLight/Rakkas-Regular.ttf"
+title-font: "/assets/WitchsLight/Rakkas-Regular.ttf"
+text-font: ""
+title-color: "black"
+text-color: "#555"
 
 gamePage: "https://ary-and-navy.itch.io/witchs-light"
 download: "Download exe"

@@ -26,7 +26,10 @@ lang_links:
   it: "/it/projects/animaalostsoul.html"
   en: "/en/projects/animaalostsoul.html"
 
-font: "/assets/AnimaALostSoul/Travelisty.otf"
+title-font: "/assets/AnimaALostSoul/Travelisty.otf"
+text-font: ""
+title-color: "black"
+text-color: "#555"
 
 gamePage: "https://ary-and-navy.itch.io/anima-a-lost-soul"
 download: "Download exe"

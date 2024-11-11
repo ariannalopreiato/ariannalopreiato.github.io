@@ -7,14 +7,14 @@
     <style>
 		@font-face {
 			font-family: 'TitleFont';
-			src: url("/assets/fonts/Mabook.ttf") format("opentype");
+			src: url("{{ page.title-font }}") format("opentype");
 			font-weight: normal;
 			font-style: normal;
 		}
 		
 		@font-face {
 			font-family: 'TextFont';
-			src: url("/assets/fonts/feltful_regular.otf") format("opentype");
+			src: url("{{ page.text-font }}") format("opentype");
 			font-weight: normal;
 			font-style: normal;
 		}
@@ -87,18 +87,22 @@
 			margin-right: 10px; /* Add slight right margin for spacing */
 		}
 
-		.infoText h3 {
+		.infoText h3, .devText h3 {
 			font-size: 1.2em;
 			color: #333;
 			margin: 0; /* Remove default margin */
+			font-family: 'TitleFont', sans-serif;
+			color: {{ page.title-color }};
 		}
 
-		.infoText p {
+		.infoText p, .devText p {
 			text-align: left;
 			margin: 0; /* Remove default paragraph margin */
 			font-size: 1em;
-			color: #555;
+			font-family: 'TextFont', sans-serif;
+			color: {{ page.text-color }};
 		}
+	
 
 		/* Optional: Reduce padding in left-page for a more compact look */
 		.left-page {
@@ -111,6 +115,7 @@
 			font-size: 2.5em;
 			margin-top: 8px;
 			transform: rotate(1deg);
+			font-family: 'TitleFont', sans-serif;
 		}
 
         /* Right page styling */
@@ -322,12 +327,12 @@
 			
             <section class="gameDescription">				
 				<div class="infoText">
-					<h3>{{page.game}}</h3> <br>
+					<h3>{{page.game}}</h3>
 					<p>{{ page.game-description }}</p>
 				</div>
-				<img src="{{ '/assets/smallpolaroid.png' }}">
+				<img src="{{ page.cover_image }}">
             </section>
-
+			<br>
             <section class="gameDevelopment">
 				<div class="devText">
 					<h3>{{ page.development }}</h3>
