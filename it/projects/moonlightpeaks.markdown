@@ -36,4 +36,7 @@ lang_links:
   en: "/en/projects/moonlightpeaks.html"
 
 gameName: "moonlightpeaks"
+
+gamePage: "https://www.moonlightpeaks.com/"
+visitSite: "Visita il sito!"
 ---
