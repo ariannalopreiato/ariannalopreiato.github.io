@@ -3,7 +3,7 @@ layout: gamepage
 lang: "it"
 title: "Witch's Light"
 
-game: "Il gioco"
+game: "Il Gioco"
 game-description: "🐀 Trasformati in un <b>ratto</b> alla <b>luce della luna</b><br>
 🐀 <b>Uccidi le guardie</b><br>
 🐀 Controlla la tua <b>salute</b><br>

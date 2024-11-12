@@ -3,24 +3,19 @@ layout: gamepage
 lang: "it"
 title: "Flower Power"
 
-game: "The Game"
-game-description: "🐀 Turn into a rat in the moonlight<br>
-🐀 Kill the guards<br>
-🐀 Keep your health under control<br>
-🔮 Turn back into a witch in the torch light<br>
-🔮 Hide from the guards<br>
-🩸 Your health determines your bleeding<br>
-🩸 Escape the prison!<br>"
+game: "Il Gioco"
+game-description: "🌷 Gioca la formica regina<br>
+🌷 <b>Guida le tue formiche al sicuro</b><br>
+🌷 Raccogli il cibo per la tua colonia<br>
+🌷 <b>Evita le pozzanghere</b><br>"
 
-development: "The Development"
-development-description: "wa"
-
-controls: "Controls"
-controls-description: "⌨️ WASD to move<br>
-🎮 Left joystick to move"
-
-credits: "Credits"
-credits-description: "🔥 Gameplay video music: Behind the Curtain of Deceit by StudioKolomna"
+development: "Lo Sviluppo"
+development-description: "🌼 <b>Prototipo di 10 ore</b><br>
+🌼 Compito per un corso<br>
+🌼 Processo passo passo: <a href='https://miro.com/app/board/uXjVMfz0c60=/' target='_blank'>lavagna su miro</a><br>
+🌼 Spunto iniziale: <b>due concetti</b><br>
+🐜 <i>'Sei la fonte del potere'</i><br>
+🐜 <i>'Inizia con niente'</i>"
 
 cover_image: "/assets/FlowerPower/flowerpower_banner.png"
 background_image: "/assets/FlowerPower/flowerpower_background.png"
@@ -33,11 +28,19 @@ lang_links:
   it: "/it/projects/flowerpower.html"
   en: "/en/projects/flowerpower.html"
 
-font: "/assets/FlowerPower/SundayBest.ttf"
+title-font: "/assets/FlowerPower/SundayBest.ttf"
+text-font: ""
+title-color: "black"
+text-color: "#555"
 
 gamePage: "https://ary-and-navy.itch.io/flower-power"
-download: "Scarica exe"
+download: "Scarica l'exe"
 visitSite: "Apri su Itch.io!"
 
 gameName: "flowerpower"
+
+img1: "/assets/FlowerPower/img1.png"
+img2: "/assets/FlowerPower/img2.png"
+img3: "/assets/FlowerPower/img3.gif"
+img4: "/assets/FlowerPower/img4.png"
 ---
