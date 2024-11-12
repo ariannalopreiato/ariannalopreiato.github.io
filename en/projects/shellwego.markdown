@@ -9,19 +9,16 @@ game-description: "🐤 <b>2 - 4 player co-op!</b><br>
 🐤 Escape the coup!<br>"
 
 development: "The Development"
-development-description: "🥚 <b>2023 Unwrap Game Jam</b> game<br>
+development-description: "🥚 Made in <b>Unreal Engine 5 blueprints</b><br>
+🥚 <b><a href='https://itch.io/jam/unwrap-jam-2023' target='_blank'>2023 Unwrap Game Jam</a></b> game<br>
 🥚 Theme: <b>Fragile</b><br>
 🥚 Made in 2.5 days in a team of 6<br>
-🥚 Made in <b>Unreal Engine 5 blueprints</b><br>
 🥚 Puzzles designed to make <b>players interact</b><br>
 <br>
 <h3>What I worked on</h3>
 <p>🍳​ <b>Puzzles and level design</b><br>
 <p>🍳​ <b>Puzzles functionality</b><br>
-<p>🍳​ <b>UI display and functionality</b><br>
-</p><br>
-<h3>The Team</h3>
-<b>Artists &nbspDevelopers</b><br>"
+<p>🍳​ <b>UI display and functionality</b><br>"
 
 cover_image: "/assets/ShellWeGo/shellwego_banner.jpg"
 background_image: "/assets/ShellWeGo/shellwego_background.png"
@@ -44,4 +41,9 @@ download: "Download exe"
 visitSite: "Open on Itch.io!"
 
 gameName: "shellwego"
+
+img1: "/assets/ShellWeGo/img1.png"
+img2: "/assets/ShellWeGo/img2.png"
+img3: "/assets/ShellWeGo/img3.png"
+img4: "/assets/ShellWeGo/img4.png"
 ---

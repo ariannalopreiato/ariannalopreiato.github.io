@@ -49,7 +49,7 @@
         /* Left and right page sections */
         .left-page, .right-page {
             width: 48%; /* Both pages take up almost half of the container */
-            padding: 10px;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -76,9 +76,9 @@
 		.gameDescription img {
 			width: auto; /* Allow width to adjust based on aspect ratio */
 			height: auto;
-			max-width: 200px;
+			max-width: 45%;
 			object-fit: contain;
-			margin-left: auto; /* Move image to the right */
+			margin-left: 30px;
 		}
 
 		/* Info Text adjustments */
@@ -236,20 +236,15 @@
 		/* Images inside the items */
 		.item img {
 		  border-radius: 20px;
-		  max-height: 180px;
+		  max-height: 150px;
 		  object-fit: cover;
 		}
 
 		/* Positions for items */
-		.item1 { position: absolute; top: 40px; left: 290px; transform: rotate(6deg); }
-		.item2 { position: absolute; top: 180px; left: 30px; transform: rotate(2deg); }
+		.item1 { position: absolute; top: 40px; left: 310px; transform: rotate(6deg); }
+		.item2 { position: absolute; top: 180px; left: 80px; transform: rotate(2deg); }
 		.item3 { position: absolute; top: 330px; left: 290px; transform: rotate(-5deg); }
-		.item4 { position: absolute; top: 440px; left: 40px; transform: rotate(5deg); }
-		.item5 { position: absolute; top: 20px; left: 50px; transform: rotate(-5deg); }
-		.item6 { position: absolute; top: 140px; left: 320px; transform: rotate(2deg); }
-		.item7 { position: absolute; top: 430px; left: 300px; transform: rotate(-3deg); }
-		.item8 { position: absolute; top: 300px; left: 50px; transform: rotate(5deg); }
-
+		.item4 { position: absolute; top: 500px; left: 100px; transform: rotate(5deg); }
 			
         /* Responsive adjustments */
         @media (max-width: 1024px) {
@@ -271,7 +266,7 @@
 
             .gallery-item img {
                 width: 100%; /* Images take full width on smaller screens */
-                max-width: 300px;
+                max-width: 150px;
             }
 
             .gallery-item h3 {
@@ -351,19 +346,19 @@
 		<!-- Right Page Content -->
         <div class="right-page">
            <div class="item item1">
-			  <img src="{{ '/assets/smallpolaroid.png' }}">
+			  <img src="{{ page.img1 }}">
 			</div>
 			
 			<div class="item item2">
-			  <img src="{{ '/assets/smallpolaroid.png' }}">
+			  <img src="{{ page.img2 }}">
 			</div>
 			
 			<div class="item item3">
-			  <img src="{{ '/assets/smallpolaroid.png' }}">
+			  <img src="{{ page.img3 }}">
 			</div>
 
 			<div class="item item4">
-			  <img src="{{ '/assets/smallpolaroid.png' }}">
+			  <img src="{{ page.img4 }}">
 			</div>
         </div>
     </div>

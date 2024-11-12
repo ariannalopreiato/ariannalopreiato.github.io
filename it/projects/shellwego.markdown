@@ -1,25 +1,24 @@
 ---
 layout: gamepage
-lang: "it"
+lang: "en"
 title: "Shell We Go?"
-game: "The Game"
-game-description: "🐀 Turn into a rat in the moonlight<br>
-🐀 Kill the guards<br>
-🐀 Keep your health under control<br>
-🔮 Turn back into a witch in the torch light<br>
-🔮 Hide from the guards<br>
-🩸 Your health determines your bleeding<br>
-🩸 Escape the prison!<br>"
+game: "Il gioco"
+game-description: "🐤 <b>2 - 4 giocatori co-op!</b><br>
+🐤 Risolvete i <b>puzzle insieme</b><br>
+🐤 <b>Evitate la zampa della volpe</b><br>
+🐤 Scappate dal pollaio!<br>"
 
-development: "The Development"
-development-description: "wa"
-
-controls: "Controls"
-controls-description: "⌨️ WASD to move<br>
-🎮 Left joystick to move"
-
-credits: "Credits"
-credits-description: "🔥 Gameplay video music: Behind the Curtain of Deceit by StudioKolomna"
+development: "Lo sviluppo"
+development-description: "🥚 Fatto con <b>blueprints in Unreal Engine 5 </b><br>
+🥚 Partecipante della <b><a href='https://itch.io/jam/unwrap-jam-2023' target='_blank'>2023 Unwrap Game Jam</a></b><br>
+🥚 Tema: <b>Fragile</b><br>
+🥚 Fatto in 2.5 giorni in un team di 6<br>
+🥚 Puzzle pensati per <b>far interagire i giocatori tra loro</b><br>
+<br>
+<h3>Il mio ruolo</h3>
+<p>🍳​ <b>Puzzle e design dei livelli</b><br>
+<p>🍳​ <b>Funzionalità dei puzzle</b><br>
+<p>🍳​ <b>Funzionalità e display della UI</b><br>"
 
 cover_image: "/assets/ShellWeGo/shellwego_banner.jpg"
 background_image: "/assets/ShellWeGo/shellwego_background.png"
@@ -32,11 +31,19 @@ lang_links:
   it: "/it/projects/shellwego.html"
   en: "/en/projects/shellwego.html"
 
-font: "/assets/ShellWeGo/GochiHand-Regular.ttf"
+title-font: "/assets/ShellWeGo/RockSalt-Regular.ttf"
+text-font: "/assets/ShellWeGo/GochiHand-Regular.ttf"
+title-color: "black"
+text-color: "#555"
 
 gamePage: "https://ary-and-navy.itch.io/shell-we-go"
-download: "Scarica exe"
+download: "Scarica l'exe"
 visitSite: "Apri su Itch.io!"
 
 gameName: "shellwego"
+
+img1: "/assets/ShellWeGo/img1.png"
+img2: "/assets/ShellWeGo/img2.png"
+img3: "/assets/ShellWeGo/img3.png"
+img4: "/assets/ShellWeGo/img4.png"
 ---
