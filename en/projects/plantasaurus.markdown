@@ -4,24 +4,25 @@ lang: "en"
 title: "Plant-A-Saurus"
 
 game: "The Game"
-game-description: "Plant-a-Saurus is a fun co-op pvp<br>
-game where you challenge the opposing team<br>
-in a race against time to collect the<br>
-most amount of eggs.<br>"
+game-description: "​🦕 <b>2 or 4 player pvp</b><br>
+​🦕 Bring the eggs to your base<br>
+​🦕 <b>Sabotage the opponent team<br>
+​🦕 Steal the opponent's eggs</b><br>
+​🦕 Have the most eggs!<br>"
 
 development: "The Development"
-development-description: "Plant-A-Saurus was developed in Unity in a group of 5:<br>
-three artists and two developers, one of them being me!<br>
-We worked on it 10 hours a week for about 12 weeks<br>
-and received weekly feedback!<br>
-After having decided how the gameplay was going to be,<br>
-my main role was coding<br>
-some of the mechanics. Specifically, I focused on coding:<br>
-- ice plant, which creates a ice slate around it<br>
-- roots plant, which creates two walls that block the player<br>
-- how the players reacts to mentioned plants<br>
-- all the UI, display and functionality<br>
-"
+development-description: "🌱​ Made in Unity<br>
+🌱​ Worked 10 hours a week for 12 weeks<br>
+🌱​ Team of 5 (3 artists, 2 developers)<br>
+🌱​ Made for school course<br>
+<br>
+<h3>What I did</h3>
+<p>🥚​​ Lead the design phase<br>
+🥚​​ Ice plant functionality<br>
+🥚​​ Root plant functionality<br>
+🥚​​ Nest functionality<br>
+🥚​​ UI functionality and display<br>
+🥚​​ HUD functionality and display</p><br>"
 
 cover_image: "/assets/PlantASaurus/plantasaurus_banner.png"
 background_image: "/assets/PlantASaurus/plantasaurus_background.png"
@@ -44,4 +45,9 @@ download: "Download exe"
 visitSite: "Open on Itch.io!"
 
 gameName: "plantasaurus"
+
+img1: "/assets/PlantASaurus/img1.png"
+img2: "/assets/PlantASaurus/img2.png"
+img3: "/assets/PlantASaurus/img3.gif"
+img4: "/assets/PlantASaurus/img4.gif"
 ---

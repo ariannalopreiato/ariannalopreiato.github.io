@@ -1,6 +1,6 @@
 ---
 layout: gamepage
-lang: "en"
+lang: "it"
 title: "Shell We Go?"
 game: "Il gioco"
 game-description: "🐤 <b>2 - 4 giocatori co-op!</b><br>
