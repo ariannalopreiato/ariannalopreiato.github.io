@@ -3,40 +3,40 @@ layout: gamepage
 lang: "it"
 title: "Open Your Eyes"
 
-game: "The Game"
-game-description: "🐀 Turn into a rat in the moonlight<br>
-🐀 Kill the guards<br>
-🐀 Keep your health under control<br>
-🔮 Turn back into a witch in the torch light<br>
-🔮 Hide from the guards<br>
-🩸 Your health determines your bleeding<br>
-🩸 Escape the prison!<br>"
+game: "Il Gioco"
+game-description: "<p>👁‍🗨 Vedi l'invisibile<br>
+👁‍🗨 Attento a non finire il potere<br>
+👁‍🗨 Risolvi i puzzle<br>
+👁‍🗨 Fuggi dal labirinto</p><br>"
 
-development: "The Development"
-development-description: "wa"
+development: "Lo Sviluppo"
+development-description: "<p>🧠 Fatto con le <b>blueprint in Unreal 4.27</b><br>
+🧠 <b>Mezzo semestre</b> di lavoro<br>
+🧠 <b>Due parole</b> come punto di partenza<br>
+🧠 I puzzle cercano sempre di <b>usare la meccanica principale</b><br>
+🧠 Tanto <b>level design per rendere i puzzle interessanti</b></p>"
 
-controls: "Controls"
-controls-description: "⌨️ WASD to move<br>
-🎮 Left joystick to move"
-
-credits: "Credits"
-credits-description: "🔥 Gameplay video music: Behind the Curtain of Deceit by StudioKolomna"
-
-cover_image: "/assets/OpenYourEyes/openyoureyes_banner.png"
+cover_image: "/assets/OpenYourEyes/openyoureyes_cover.png"
 background_image: "/assets/OpenYourEyes/openyoureyes_background.png"
 background_color: "#615aed"
-
-gallery:
-  - "/assets/OpenYourEyes/1.jpg"
 
 lang_links:
   it: "/it/projects/openyoureyes.html"
   en: "/en/projects/openyoureyes.html"
 
-font: "/assets/OpenYourEyes/SuperDream.ttf"
+title-font: "/assets/OpenYourEyes/SuperDream.ttf"
+text-font: ""
+title-color: "black"
+text-color: "#555"
+
 gamePage: "https://ary-and-navy.itch.io/open-your-eyes"
-download: "Scarica exe"
+download: "Scarica l'exe"
 visitSite: "Apri su Itch.io!"
 
 gameName: "openyoureyes"
+
+img1: "/assets/OpenYourEyes/img1.png"
+img2: "/assets/OpenYourEyes/img2.png"
+img3: "/assets/OpenYourEyes/img3.png"
+img4: "/assets/OpenYourEyes/img4.png"
 ---

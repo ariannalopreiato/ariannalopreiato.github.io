@@ -4,30 +4,21 @@ lang: "en"
 title: "Open Your Eyes"
 
 game: "The Game"
-game-description: "🐀 Turn into a rat in the moonlight<br>
-🐀 Kill the guards<br>
-🐀 Keep your health under control<br>
-🔮 Turn back into a witch in the torch light<br>
-🔮 Hide from the guards<br>
-🩸 Your health determines your bleeding<br>
-🩸 Escape the prison!<br>"
+game-description: "<p>👁‍🗨 See the invisible<br>
+👁‍🗨 Make sure to never run out of power<br>
+👁‍🗨 Solve the puzzles<br>
+👁‍🗨 Escape the maze</p><br>"
 
 development: "The Development"
-development-description: "wa"
+development-description: "<p>🧠 Made in <b>Unreal 4.27 blueprints</b><br>
+🧠 <b>Half a semester</b> prototype<br>
+🧠 Started with <b>two words</b><br>
+🧠 Puzzles defined to always <b>use the main mechanic</b><br>
+🧠 Lots of <b>level design to make puzzles interesting</b></p>"
 
-controls: "Controls"
-controls-description: "⌨️ WASD to move<br>
-🎮 Left joystick to move"
-
-credits: "Credits"
-credits-description: "🔥 Gameplay video music: Behind the Curtain of Deceit by StudioKolomna"
-
-cover_image: "/assets/OpenYourEyes/openyoureyes_banner.png"
+cover_image: "/assets/OpenYourEyes/openyoureyes_cover.png"
 background_image: "/assets/OpenYourEyes/openyoureyes_background.png"
 background_color: "#615aed"
-
-gallery:
-  - "/assets/OpenYourEyes/1.jpg"
 
 lang_links:
   it: "/it/projects/openyoureyes.html"
@@ -43,4 +34,9 @@ download: "Download exe"
 visitSite: "Open on Itch.io!"
 
 gameName: "openyoureyes"
+
+img1: "/assets/OpenYourEyes/img1.png"
+img2: "/assets/OpenYourEyes/img2.png"
+img3: "/assets/OpenYourEyes/img3.png"
+img4: "/assets/OpenYourEyes/img4.png"
 ---
