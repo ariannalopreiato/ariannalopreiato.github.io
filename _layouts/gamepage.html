@@ -117,21 +117,7 @@
 			font-family: 'TitleFont', sans-serif;
 		}
 
-        /* Right page styling */
-        .gallery-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 10px;
-            margin-left: 80px;
-            margin-bottom: 80px;
-        }
-
-        .gallery-item img {
-            width: 200px;
-            height: auto;
-        }
-		
+        /* Right page styling */		
 		.imgGame, .textArt {
 			transform: rotate(5deg); 
 		}
@@ -339,7 +325,7 @@
 				{% if page.download_url %}
 					<a href="{{ page.download_url }}" class="button download-button">{{ page.download }}</a>
 				{% endif %}
-				<a href={{page.gamePage}} class="button game-page-button">{{ page.visitSite }}</a>
+				<a href="{{page.gamePage}}" class="button game-page-button">{{ page.visitSite }}</a>
 			</div>
         </div>
 

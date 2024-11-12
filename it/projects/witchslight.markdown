@@ -3,41 +3,46 @@ layout: gamepage
 lang: "it"
 title: "Witch's Light"
 
-game: "Il Gioco"
-game-description: "🐀 Trasformati in un ratto alla luce della luna<br>
-🐀 Uccidi le guardie<br>
-🐀 Fai attenzione alla tua salute<br>
-🔮 Torna strega alla luce delle torce<br>
-🔮 Nasconditi dalle guardie<br>
-🩸 La tua salute determina la tua perdita di sangue<br>
-🩸 Fuggi dalla prigione!<br>"
+game: "Il gioco"
+game-description: "🐀 Trasformati in un <b>ratto</b> alla <b>luce della luna</b><br>
+🐀 <b>Uccidi le guardie</b><br>
+🐀 Controlla la tua <b>salute</b><br>
+🔮 Torna <b>strega</b> alla <b>luce delle torce</b><br>
+🔮 <b>Nasconditi dalle guardie</b><br>
+🩸 La tua <b>salute</b> determina quanto <b>sanguini</b><br>
+🩸 Scappa dalla prigione!<br>"
 
-development: "Sviluppo"
-development-description: "wa"
+development: "Lo Sviluppo"
+development-description: "<p>🌙Visita al <a href='https://www.torturemuseum.be/' target='_blank'>Museo delle torture di Brugge</a><br>
+🌙 Periodo molto nebbioso<br>
+🌙 <b><i>'A Plague Tale'</i></b> e <b><i>'Inside'</i></b><br><br>
+🌙​​ Primo passo, sviluppare le meccaniche<br>
+🌙​​ Programmare le meccaniche<br>
+🌙​​ Creare il layout del livello<br>
+🌙 Processo passo passo: <a href='https://miro.com/app/board/uXjVP9cmhgU=/' target='_blank'>lavagna su miro</a><br>
+🌙 <a href='https://www.youtube.com/watch?v=5fj6BLLCpEM' target='_blank'>Video che mostra l'evoluzione e i prototipi</a></p>"
 
-controls: "Comandi"
-controls-description: "⌨️ WASD per muoversi<br>
-🎮 Joystick sinistro per muoversi"
-
-credits: "Credits"
-credits-description: "🔥 Musica del gameplay: Behind the Curtain of Deceit di StudioKolomna"
-
-cover_image: "/assets/WitchsLight/witchslight_banner.png"
+cover_image: "/assets/WitchsLight/witchslight_cover.png"
 background_image: "/assets/WitchsLight/witchslight_background.png"
 background_color: "#615aed"
-
-gallery:
-  - "/assets/WitchsLight/1.jpg"
 
 lang_links:
   it: "/it/projects/witchslight.html"
   en: "/en/projects/witchslight.html"
 
-font: "/assets/WitchsLight/Rakkas-Regular.ttf"
+title-font: "/assets/WitchsLight/Rakkas-Regular.ttf"
+text-font: ""
+title-color: "black"
+text-color: "#555"
 
 gamePage: "https://ary-and-navy.itch.io/witchs-light"
-download: "Scarica exe"
+download: "Scarica l'exe"
 visitSite: "Apri su Itch.io!"
 
 gameName: "witchslight"
+
+img1: "/assets/WitchsLight/img1.gif"
+img2: "/assets/WitchsLight/img2.png"
+img3: "/assets/WitchsLight/img3.gif"
+img4: "/assets/WitchsLight/img4.png"
 ---

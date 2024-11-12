@@ -4,30 +4,27 @@ lang: "en"
 title: "Witch's Light"
 
 game: "The Game"
-game-description: "🐀 Turn into a rat in the moonlight<br>
-🐀 Kill the guards<br>
-🐀 Keep your health under control<br>
-🔮 Turn back into a witch in the torch light<br>
-🔮 Hide from the guards<br>
-🩸 Your health determines your bleeding<br>
+game-description: "🐀 Turn into a <b>rat</b> in the <b>moonlight</b><br>
+🐀 <b>Kill the guards</b><br>
+🐀 Keep your <b>health</b> under control<br>
+🔮 Turn back into a <b>witch</b> in the <b>torch light</b><br>
+🔮 <b>Hide from the guards</b><br>
+🩸 Your <b>health</b> determines your <b>bleeding</b><br>
 🩸 Escape the prison!<br>"
 
 development: "The Development"
-development-description: "wa"
+development-description: "<p>🌙 Inspired by a visit at the <a href='https://www.torturemuseum.be/' target='_blank'>Torture Museum of Brugge</a><br>
+🌙 Inspired by the very foggy period<br>
+🌙 Inspired by <b><i>'A Plague Tale'</i></b> and <b><i>'Inside'</i></b><br><br>
+🌙​​ Started from figuring out the mechanics<br>
+🌙​​ Prototyped the mechanics<br>
+🌙​​ Designed the level layout<br>
+🌙 Thought process: <a href='https://miro.com/app/board/uXjVP9cmhgU=/' target='_blank'>miro board</a><br>
+🌙 <a href='https://www.youtube.com/watch?v=5fj6BLLCpEM' target='_blank'>Evolution and prototypes video</a></p>"
 
-controls: "Controls"
-controls-description: "⌨️ WASD to move<br>
-🎮 Left joystick to move"
-
-credits: "Credits"
-credits-description: "🔥 Gameplay video music: Behind the Curtain of Deceit by StudioKolomna"
-
-cover_image: "/assets/WitchsLight/witchslight_banner.png"
+cover_image: "/assets/WitchsLight/witchslight_cover.png"
 background_image: "/assets/WitchsLight/witchslight_background.png"
 background_color: "#615aed"
-
-gallery:
-  - "/assets/WitchsLight/1.jpg"
 
 lang_links:
   it: "/it/projects/witchslight.html"
@@ -43,4 +40,9 @@ download: "Download exe"
 visitSite: "Open on Itch.io!"
 
 gameName: "witchslight"
+
+img1: "/assets/WitchsLight/img1.gif"
+img2: "/assets/WitchsLight/img2.png"
+img3: "/assets/WitchsLight/img3.gif"
+img4: "/assets/WitchsLight/img4.png"
 ---
