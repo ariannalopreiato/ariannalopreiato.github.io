@@ -33,8 +33,13 @@ lang_links:
 
 title-font: "/assets/ShellWeGo/RockSalt-Regular.ttf"
 text-font: "/assets/ShellWeGo/GochiHand-Regular.ttf"
-title-color: "black"
-text-color: "#555"
+game-color: "#8C5723"
+title-color: "#C45C15"
+text-color: "#592405"
+button1-color: "#E1D529"
+button2-color: "#E1D529"
+text1-color: "#9E8221"
+text2-color: "#9E8221"
 
 gamePage: "https://ary-and-navy.itch.io/shell-we-go"
 download: "Scarica l'exe"

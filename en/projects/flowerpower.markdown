@@ -5,8 +5,8 @@ title: "Flower Power"
 
 game: "The Game"
 game-description: "🌷 Play as the ant queen<br>
-🌷 <b>Guide your ants to safety</b><br>
-🌷 Collect food to keep your colony alive<br>
+🌷 <b>Guide your ants<br>to safety</b><br>
+🌷 Collect food to keep<br> your colony alive<br>
 🌷 <b>Avoid the puddles</b><br>"
 
 development: "The Development"
@@ -29,9 +29,14 @@ lang_links:
   en: "/en/projects/flowerpower.html"
 
 title-font: "/assets/FlowerPower/SundayBest.ttf"
-text-font: ""
-title-color: "black"
-text-color: "#555"
+text-font: "/assets/FlowerPower/GloriaHallelujah-Regular.ttf"
+game-color: "#A6DD66"
+title-color: "#F28DC4"
+text-color: "#736E2C"
+button1-color: "#FFB25C"
+button2-color: "#F2E867"
+text1-color: "#F2E867"
+text2-color: "#FFB25C"
 
 gamePage: "https://ary-and-navy.itch.io/flower-power"
 download: "Download exe"

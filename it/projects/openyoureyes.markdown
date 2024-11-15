@@ -5,7 +5,7 @@ title: "Open Your Eyes"
 
 game: "Il Gioco"
 game-description: "<p>👁‍🗨 Vedi l'invisibile<br>
-👁‍🗨 Attento a non finire il potere<br>
+👁‍🗨 Non finire il potere<br>
 👁‍🗨 Risolvi i puzzle<br>
 👁‍🗨 Fuggi dal labirinto</p><br>"
 
@@ -25,9 +25,14 @@ lang_links:
   en: "/en/projects/openyoureyes.html"
 
 title-font: "/assets/OpenYourEyes/SuperDream.ttf"
-text-font: ""
-title-color: "black"
-text-color: "#555"
+text-font: "/assets/OpenYourEyes/OpenDyslexicAlta-Regular.otf"
+game-color: "#6B4288"
+title-color: "#8565A6"
+text-color: "#3E1559"
+button1-color: "#9371AE"
+button2-color: "#8561A1"
+text1-color: "#C9BDF2"
+text2-color: "#C9BDF2"
 
 gamePage: "https://ary-and-navy.itch.io/open-your-eyes"
 download: "Scarica l'exe"

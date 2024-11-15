@@ -26,7 +26,6 @@ development-description: "🌱​ Made in Unity<br>
 
 cover_image: "/assets/PlantASaurus/plantasaurus_banner.png"
 background_image: "/assets/PlantASaurus/plantasaurus_background.png"
-background_color: "#615aed"
 
 gallery:
   - "/assets/PlantASaurus/1.jpg"
@@ -36,9 +35,14 @@ lang_links:
   en: "/en/projects/plantasaurus.html"
 
 title-font: "/assets/PlantASaurus/QuietlyEndureRegular.otf"
-text-font: ""
-title-color: "black"
-text-color: "#555"
+text-font: "/assets/PlantASaurus/ComfyFeeling.otf"
+game-color: "#555"
+title-color: "#9483cc"
+text-color: "#78777a"
+button1-color: "#95d68d"
+button2-color: "#C9D94E"
+text1-color: "#D98236"
+text2-color: "#9CAE38"
 
 gamePage: "https://kayahx.itch.io/plantasaurus"
 download: "Download exe"

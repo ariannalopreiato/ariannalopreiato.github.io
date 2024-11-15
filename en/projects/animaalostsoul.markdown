@@ -3,19 +3,18 @@ layout: gamepage
 lang: "en"
 title: "Anima A Lost Soul"
 game: "The Game"
-game-description: "a very nice game"
+game-description: "📿 Complete the levels<br>to reach Nirvana<br>
+📿 Unlock chackras to gain<br>new abilities<br>
+📿 Defeat enemies and lose<br>power or spare them<br>and take the long way<br>
+📿 Decide your path<br>"
 
 development: "The Development"
-development-description: "wa"
+development-description: "🎐​ Made in <b>Unreal 4.27 blueprints</b><br>
+🎐​ 4 weeks work<br>
+🎐​ Started with <b>two words</b><br>
+🎐​ Level design to <b>always have a valid path</b><br>"
 
-controls: "Controls"
-controls-description: "⌨️ WASD to move<br>
-🎮 Left joystick to move"
-
-credits: "Credits"
-credits-description: "🔥 Gameplay video music: Behind the Curtain of Deceit by StudioKolomna"
-
-cover_image: "/assets/AnimaALostSoul/animaalostsoul_banner.png"
+cover_image: "/assets/AnimaALostSoul/animaalostsoul_cover.png"
 background_image: "/assets/AnimaALostSoul/animaalostsoul_background.png"
 background_color: "#615aed"
 
@@ -36,4 +35,11 @@ download: "Download exe"
 visitSite: "Open on Itch.io!"
 
 gameName: "animaalostsoul"
+
+
+type1: 'video'
+img1: "https://www.youtube.com/embed/CWjJZL2UPUM"
+img2: "/assets/AnimaALostSoul/img2.png"
+img3: "/assets/AnimaALostSoul/img3.png"
+img4: "/assets/AnimaALostSoul/img1.png"
 ---
