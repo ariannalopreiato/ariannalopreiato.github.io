@@ -51,4 +51,20 @@ img1: "/assets/ShellWeGo/img1.png"
 img2: "/assets/ShellWeGo/img2.png"
 img3: "/assets/ShellWeGo/img3.png"
 img4: "/assets/ShellWeGo/img4.png"
+
+top1: "40"
+left1: "310"
+transform1: "6"
+
+top2: "180"
+left2: "80"
+transform2: "2"
+
+top3: "330"
+left3: "290"
+transform3: "-5"
+
+top4: "500"
+left4: "100"
+transform4: "5"
 ---

@@ -44,8 +44,25 @@ visitSite: "Open on Itch.io!"
 
 gameName: "flowerpower"
 
-img1: "/assets/FlowerPower/img1.png"
+type1: 'video'
+img1: "https://www.youtube.com/embed/EWH_cblDTT0"
 img2: "/assets/FlowerPower/img2.png"
-img3: "/assets/FlowerPower/img3.gif"
+img3: "/assets/FlowerPower/img1.png"
 img4: "/assets/FlowerPower/img4.png"
+
+top1: "40"
+left1: "310"
+transform1: "6"
+
+top2: "180"
+left2: "80"
+transform2: "2"
+
+top3: "330"
+left3: "290"
+transform3: "-5"
+
+top4: "500"
+left4: "100"
+transform4: "5"
 ---

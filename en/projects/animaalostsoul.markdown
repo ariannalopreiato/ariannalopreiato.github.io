@@ -42,4 +42,20 @@ img1: "https://www.youtube.com/embed/CWjJZL2UPUM"
 img2: "/assets/AnimaALostSoul/img2.png"
 img3: "/assets/AnimaALostSoul/img3.png"
 img4: "/assets/AnimaALostSoul/img1.png"
+
+top1: "40"
+left1: "310"
+transform1: "6"
+
+top2: "180"
+left2: "80"
+transform2: "2"
+
+top3: "330"
+left3: "290"
+transform3: "-5"
+
+top4: "500"
+left4: "100"
+transform4: "5"
 ---

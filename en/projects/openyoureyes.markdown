@@ -40,8 +40,30 @@ visitSite: "Open on Itch.io!"
 
 gameName: "openyoureyes"
 
-img1: "/assets/OpenYourEyes/img1.png"
+type1: 'video'
+img1: "https://www.youtube.com/embed/YwktQJiCw0w"
 img2: "/assets/OpenYourEyes/img2.png"
 img3: "/assets/OpenYourEyes/img3.png"
 img4: "/assets/OpenYourEyes/img4.png"
+img5: "/assets/OpenYourEyes/img1.png"
+
+top1: "40"
+left1: "310"
+transform1: "6"
+
+top2: "180"
+left2: "80"
+transform2: "2"
+
+top3: "330"
+left3: "290"
+transform3: "-5"
+
+top4: "500"
+left4: "100"
+transform4: "5"
+
+top5: "40"
+left5: "100"
+transform5: "5"
 ---

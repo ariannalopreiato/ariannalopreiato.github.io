@@ -50,8 +50,30 @@ visitSite: "Open on Itch.io!"
 
 gameName: "plantasaurus"
 
-img1: "/assets/PlantASaurus/img1.png"
-img2: "/assets/PlantASaurus/img2.png"
-img3: "/assets/PlantASaurus/img3.gif"
-img4: "/assets/PlantASaurus/img4.gif"
+type1: 'video'
+img1: "https://www.youtube.com/embed/VTNCJ9mLUYo"
+img2: "/assets/PlantASaurus/img1.png"
+img3: "/assets/PlantASaurus/img2.png"
+img4: "/assets/PlantASaurus/img3.gif"
+img5: "/assets/PlantASaurus/img4.gif"
+
+top1: "40"
+left1: "310"
+transform1: "6"
+
+top2: "180"
+left2: "80"
+transform2: "2"
+
+top3: "330"
+left3: "290"
+transform3: "-5"
+
+top4: "500"
+left4: "100"
+transform4: "5"
+
+top5: "40"
+left5: "100"
+transform5: "5"
 ---

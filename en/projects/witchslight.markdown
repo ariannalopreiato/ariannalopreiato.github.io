@@ -46,8 +46,30 @@ visitSite: "Open on Itch.io!"
 
 gameName: "witchslight"
 
-img1: "/assets/WitchsLight/img1.gif"
+type1: 'video'
+img1: "https://www.youtube.com/embed/Zn2ZCr3ecR4"
 img2: "/assets/WitchsLight/img2.png"
 img3: "/assets/WitchsLight/img3.gif"
 img4: "/assets/WitchsLight/img4.png"
+img5: "/assets/WitchsLight/img1.gif"
+
+top1: "40"
+left1: "310"
+transform1: "6"
+
+top2: "180"
+left2: "80"
+transform2: "2"
+
+top3: "330"
+left3: "290"
+transform3: "-5"
+
+top4: "500"
+left4: "100"
+transform4: "5"
+
+top5: "100"
+left5: "310"
+transform5: "6"
 ---

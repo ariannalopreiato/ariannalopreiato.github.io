@@ -233,11 +233,16 @@
 		}
 
 		/* Positions for items */
-		.item1 { position: absolute; top: 40px; left: 310px; transform: rotate(6deg); }
-		.item2 { position: absolute; top: 180px; left: 80px; transform: rotate(2deg); }
-		.item3 { position: absolute; top: 330px; left: 290px; transform: rotate(-5deg); }
-		.item4 { position: absolute; top: 500px; left: 100px; transform: rotate(5deg); }
-			
+		.item1 { position: absolute; top: {{ page.top1 }}px; left: {{ page.left1 }}px; transform: rotate({{ page.transform1 }}deg); }
+		.item2 { position: absolute; top: {{ page.top2 }}px; left: {{ page.left2 }}px; transform: rotate({{ page.transform2 }}deg); }
+		.item3 { position: absolute; top: {{ page.top3 }}px; left: {{ page.left3 }}px; transform: rotate({{ page.transform3 }}deg); }
+		.item4 { position: absolute; top: {{ page.top4 }}px; left: {{ page.left4 }}px; transform: rotate({{ page.transform4 }}deg); }
+		.item5 { position: absolute; top: {{ page.top5 }}px; left: {{ page.left5 }}px; transform: rotate({{ page.transform5 }}deg); }
+		.item6 { position: absolute; top: {{ page.top6 }}px; left: {{ page.left6 }}px; transform: rotate({{ page.transform6 }}deg); }
+		.item7 { position: absolute; top: {{ page.top7 }}px; left: {{ page.left7 }}px; transform: rotate({{ page.transform7 }}deg); }
+		.item8 { position: absolute; top: {{ page.top8 }}px; left: {{ page.left8 }}px; transform: rotate({{ page.transform8 }}deg); }
+		
+		
         /* Responsive adjustments */
         @media (max-width: 1024px) {
             .container {
@@ -393,6 +398,64 @@
 						<img src="{{ page.img4 }}">
 					{% endif %}
 			</div>
+			
+           <div class="item item5">
+			   {% if page.type5 == 'video' %}
+				<iframe 
+					width="100%" 
+					height="150" 
+					src="{{ page.img5 }}" 
+					frameborder="0" 
+					allowfullscreen>
+				</iframe>
+				{% else %}
+					<img src="{{ page.img5 }}">
+				{% endif %}
+			</div>
+			
+			<div class="item item6">
+				{% if page.type6 == 'video' %}
+					<iframe 
+						width="100%" 
+						height="150" 
+						src="{{ page.img6 }}" 
+						frameborder="0" 
+						allowfullscreen>
+					</iframe>
+					{% else %}
+						<img src="{{ page.img6 }}">
+					{% endif %}
+			</div>
+			
+			<div class="item item7">
+				{% if page.type7 == 'video' %}
+					<iframe 
+						width="100%" 
+						height="150" 
+						src="{{ page.img7 }}" 
+						frameborder="0" 
+						allowfullscreen>
+					</iframe>
+					{% else %}
+						<img src="{{ page.img7 }}">
+					{% endif %}
+			</div>
+
+			<div class="item item8">
+				{% if page.type8 == 'video' %}
+					<iframe 
+						width="100%" 
+						height="150" 
+						src="{{ page.img8}}" 
+						frameborder="0" 
+						border-radius="15px"
+						allowfullscreen>
+					</iframe>
+					{% else %}
+						<img src="{{ page.img8 }}">
+					{% endif %}
+			</div>
+			
         </div>
     </div>
 
