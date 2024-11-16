@@ -31,9 +31,14 @@ lang_links:
   en: "/en/projects/witchslight.html"
 
 title-font: "/assets/WitchsLight/Rakkas-Regular.ttf"
-text-font: ""
-title-color: "black"
-text-color: "#555"
+text-font: "/assets/WitchsLight/Spectral-Regular.ttf"
+game-color: "#4B3B14"
+title-color: "#4B3B14"
+text-color: "#544E4B"
+button1-color: "#867654"
+button2-color: "#6B6461"
+text1-color: "#A78E8A"
+text2-color: "#DECBAF"
 
 gamePage: "https://ary-and-navy.itch.io/witchs-light"
 download: "Scarica l'exe"
